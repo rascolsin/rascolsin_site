@@ -1,0 +1,17 @@
+site_name: Mon cul
+
+theme: mkdocs
+
+markdown_extensions:
+  - extra
+  - tables
+  - fenced_code
+  - admonition
+extra_javascript:
+  - https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML
+  - mathjaxhelper.js
+
+nav:
+    - Home: index.md
+    - About: about.md
+    - Arduino: 02-Variables_constantes/Variables_constantes.md
