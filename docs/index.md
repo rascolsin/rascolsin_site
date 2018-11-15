@@ -1,8 +1,8 @@
-# Welcome to MkDocs
+# Code, électronique, innovation, 🚀 ...
 
-For full documentation visit [mkdocs.org](https://mkdocs.org).
+> Tutoriels variés et diffusion de mes enseignements en section STI2D SIN au lycée Louis Rascol à Albi.
 
-## Commands
+## Liens vers les groupes Gitlab des classes :
 
 * `mkdocs new [dir-name]` - Create a new project.
 * `mkdocs serve` - Start the live-reloading docs server.
