@@ -1,17 +1,19 @@
 # Code, électronique, innovation, 🚀 ...
 
-> Tutoriels variés et diffusion de mes enseignements en section STI2D SIN au lycée Louis Rascol à Albi.
+> Tutoriels variés et diffusion de mes enseignements en section STI2D SIN au [lycée Louis Rascol](http://louis-rascol.entmip.fr/) à Albi.
 
-## Liens vers les groupes Gitlab des classes :
+## Liens vers Gitlab
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs help` - Print this help message.
+*Pour les corrections et les evals*
 
-## Project layout
+* [Groupe 1ere STI2D SIN](https://gitlab.com/psti2d_sin_rascol)
+* [Groupe Term STI2D SIN](https://gitlab.com/tsti2d_sin_rascol)
 
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+**N'oubliez pas de vous identifier à l'aide de votre mail Rascol en prenom.nom@e.rascol.net**
+
+## Liens vers Nextcloud
+
+*Pour les notes, des ressources  et autres ...*
+
+* [Dossier de 1ere STI2D SIN](https://nc.zerolabs.cc/s/pngN99amqGH4LHm)
+* [Dossier de Term STI2D SIN](https://nc.zerolabs.cc/s/Wj2Lq7gW4BDx7dC)
