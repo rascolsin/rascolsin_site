@@ -1,3 +1,6 @@
+<!-- TODO Sur le Raspberry Pi la config avec ifup/ifdown ne marche pas, le fichier network/interfaces ne peut en théorie pas être modifié, on peut changer les adresses IP dans le menu raspi-config
+TODO Le serveur ssh est déjà installer dans Raspbian mais il faut l'activer dans raspi-config -->
+
 # Activité : La ligne de commande - Partie 2
 
 ## 1 - Création d'un nouvel utilisateur
