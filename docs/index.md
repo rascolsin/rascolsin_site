@@ -1,6 +1,6 @@
 # Code, électronique, innovation, 🚀 ...
 
-> Tutoriels variés et diffusion de mes enseignements en section STI2D SIN au [lycée Louis Rascol](http://louis-rascol.entmip.fr/) à Albi.
+> Tutoriels variés et diffusion des enseignements en section STI2D SIN au [lycée Louis Rascol](http://louis-rascol.entmip.fr/) à Albi.
 
 ## Liens vers Gitlab
 
@@ -11,9 +11,9 @@
 
 **N'oubliez pas de vous identifier à l'aide de votre mail Rascol en prenom.nom@e.rascol.net**
 
-## Liens vers Nextcloud
+## Liens vers Google Drive
 
 *Pour les notes, des ressources  et autres ...*
 
-* [Dossier de 1ere STI2D SIN](https://nc.zerolabs.cc/s/pngN99amqGH4LHm)
-* [Dossier de Term STI2D SIN](https://nc.zerolabs.cc/s/Wj2Lq7gW4BDx7dC)
+* [Dossier de 1ere STI2D SIN]
+* [Dossier de Term STI2D SIN]
