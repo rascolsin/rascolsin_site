@@ -1,4 +1,4 @@
-# Activité : La ligne de commande - Partie 1
+# Activité : Utiliser le terminal
 
 Le but de cette activité est une initiation à l'utilisation de la ligne de commande sous Linux. Nous souhaitons pour cette séance nous focaliser sur l'utilisation de Linux à l'aide de la console, inventée dans les années 70, quand l'interface graphique n'existait pas encore.<br/>Aujourd'hui la console est appréciée pour son gain de temps (commandes intuitives courtes et abrégées), et sa très faible consommation de ressources graphiques. Savoir utiliser la console nous permet de comprendre comment le système fonctionne, son utilisation sera par exemple indispensable pour communiquer avec le Raspberry Pi à distance.
 
