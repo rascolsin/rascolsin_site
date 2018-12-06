@@ -9,9 +9,9 @@ Cette activité se déroulera sur une distribution GNU/Linux lancée en live usb
 1. Démarrez l'ordinateur avec la clé USB connectée.
 2. Choisissez **Essayer Ubuntu**
 3. Tout d'abord changez la langue du clavier pour le Français :
-![](pages/Terminale/Sequence_Linux/01-Activités/01-La_ligne_de_commande_P1/figures/screenclav.png)
+![](\tsti2d\linux\figures\screenclav.png)
 4. Grâce au lanceur démarrez un terminal :
-![](pages/Terminale/Sequence_Linux/01-Activités/01-La_ligne_de_commande_P1/figures/screen_choix_term.png)
+![](\tsti2d\linux\figures\screen_choix_term.png)
 5. Félicitations ! Vous êtes devant un invite de commande aussi appelé *prompt*
 
 ## 2 - Déplacement dans l'arborescence

@@ -9,8 +9,8 @@
 
 1. [Introduction à GNU/Linux](\tsti2d\linux\01-Intro)
 2. [Le Raspberry Pi](\tsti2d\linux\02-Raspberry_pi)
-3. [Utiliser le terminal](\tsti2d\linux\02-Commandes_bash)
-4. [Gérer les permissions en environnement GNU-Linux](\tsti2d\linux\03-Permissions)
+3. [Utiliser le terminal](\tsti2d\linux\03-Commandes_bash)
+4. [Gérer les permissions en environnement GNU-Linux](\tsti2d\linux\04-Permissions)
 5. [Réalisation de scripts Bash](\tsti2d\linux\05-Scripts_bash)
 
 ### Activités
