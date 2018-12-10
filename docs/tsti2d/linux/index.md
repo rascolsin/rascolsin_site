@@ -15,6 +15,9 @@
 
 ### Activités
 
+L'ensemble des activités sont réalisées sur une carte [Raspberry Pi](https://www.raspberrypi.org/products/raspberry-pi-3-model-b-plus/) avec la distribution [Raspbian](https://www.raspbian.org/).
+
 1. [Utiliser le terminal](\tsti2d\linux\ACT1-Util_term)
 2. [Linux et le réseau](\tsti2d\linux\ACT2-Linux_reseau)
 3. [Gérer les permissions](\tsti2d\linux\ACT3-Gerer_permissions)
+4. [Écrire des scripts Bash](\tsti2d\linux\ACT4-Scripts_bash)
