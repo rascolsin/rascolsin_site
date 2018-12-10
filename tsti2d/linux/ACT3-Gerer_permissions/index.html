@@ -392,22 +392,6 @@
     
   
   
-    <label class="md-nav__title" for="__toc">Table of contents</label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#modifier-les-permissions" title="Modifier les permissions" class="md-nav__link">
-    Modifier les permissions
-  </a>
-  
-</li>
-      
-      
-      
-      
-      
-    </ul>
-  
 </nav>
                   </div>
                 </div>
@@ -422,7 +406,133 @@
                 
                 
                 <h1 id="activite-gerer-les-permissions-en-environnement-gnu-linux">Activité : Gérer les permissions en environnement GNU-Linux</h1>
-<h2 id="modifier-les-permissions">Modifier les permissions</h2>
+<p>Vous êtes technicien dans l'entreprise de service réseau AlbiTech et un de vos client M.Turing fait appel à vous pour la configuration d'un serveur linux, tournant sur une carte Raspberry Pi. Vous établissez ensemble le cahier des charges suivant :</p>
+<ul>
+<li>Création de 4 comptes utilisateurs et de 3 nouveaux groupes:</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Utilisateur</th>
+<th>Groupes</th>
+<th>Pass</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>alan</td>
+<td>sudoers parents famille</td>
+<td>enigma</td>
+</tr>
+<tr>
+<td>grace</td>
+<td>sudoers parents famille</td>
+<td>hopper</td>
+</tr>
+<tr>
+<td>richard</td>
+<td>enfants famille</td>
+<td>stallman</td>
+</tr>
+<tr>
+<td>linus</td>
+<td>enfants famille</td>
+<td>torvalds</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>Lorsque un utilisateur est créé Linux crée automatiquement le groupe du même nom.</p>
+</div>
+<ul>
+<li>Création de répertoires :</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Répertoire</th>
+<th>Propriétaire</th>
+<th>Groupe</th>
+<th>Droits</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>/media/photos</td>
+<td>alan</td>
+<td>famille</td>
+<td>rwx rwx r-x</td>
+</tr>
+<tr>
+<td>/partage/cadeaux</td>
+<td>alan</td>
+<td>parents</td>
+<td>rwx rwx ---</td>
+</tr>
+<tr>
+<td>/partage/administratif</td>
+<td>alan</td>
+<td>parents</td>
+<td>rwx rwx ---</td>
+</tr>
+<tr>
+<td>/home/alan/TuringTest</td>
+<td>alan</td>
+<td>alan</td>
+<td>rwx rwx ---</td>
+</tr>
+<tr>
+<td>/home/grace/Cobol</td>
+<td>grace</td>
+<td>grace</td>
+<td>rwx rwx ---</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>Transfert de fichiers dans les répertoires créés, depuis un serveur web :</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Fichiers</th>
+<th>Répertoire de destination</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>administratif/*</td>
+<td>/partage/administratif</td>
+</tr>
+<tr>
+<td>photos/*</td>
+<td>/media/photos</td>
+</tr>
+<tr>
+<td>cobol/*</td>
+<td>/home/grace/Cobol</td>
+</tr>
+<tr>
+<td>turingtest/*</td>
+<td>/home/alan/TuringTest</td>
+</tr>
+</tbody>
+</table>
+<p>Pour télécharger les fichiers à classer :</p>
+<div class="codehilite"><pre><span></span>wget https://rascolsin.fr/tsti2d/linux/ressources/files.zip
+</pre></div>
+
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>Pour décompresser l'archive .zip téléchargée vous aurez besoin de télécharger l'utilitaire <code class="codehilite">unzip</code> :
+<div class="codehilite"><pre><span></span>sudo apt install unzip
+
+<span class="c1">#Pour décompresser</span>
+unzip archive.zip
+</pre></div></p>
+</div>
+<p>Bien vérifier que les permissions des dossiers soient répercutées sur les fichiers.</p>
                 
                   
                 
@@ -445,7 +555,7 @@
       <div class="md-footer-copyright">
         
           <div class="md-footer-copyright__highlight">
-            <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Licence Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">L'ensemble du contenu du site rascolsin.fr</span> de <span xmlns:cc="http://creativecommons.org/ns#" property="cc:attributionName">Joris Serrand</span> est mis à disposition selon les termes de la <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">licence Creative Commons Attribution <br />  Partage dans les Mêmes Conditions 4.0 International</a>.  <br />Made with ❤ in Albi
+            <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Licence Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">L'ensemble du contenu du site rascolsin.fr</span> de <span xmlns:cc="http://creativecommons.org/ns#" property="cc:attributionName">Joris Serrand</span> est mis à disposition selon les termes de la <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">licence Creative Commons Attribution <br />  Partage dans les Mêmes Conditions 4.0 International</a>.  <br />Made with ❤ in <a href="https://en.wikipedia.org/wiki/Albi">Albi</a>
           </div>
         
         powered by
