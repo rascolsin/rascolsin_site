@@ -36,7 +36,7 @@
     
     
       
-        <title>Introduction à GNU Linux - Rascol Sin</title>
+        <title>Activité : Gérer les permissions en environnement GNU-Linux - Rascol Sin</title>
       
     
     
@@ -99,7 +99,7 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
     
-      <a href="#introduction-a-gnu-linux" tabindex="1" class="md-skip">
+      <a href="#activite-gerer-les-permissions-en-environnement-gnu-linux" tabindex="1" class="md-skip">
         Skip to content
       </a>
     
@@ -125,7 +125,7 @@
                 Rascol Sin
               </span>
               <span class="md-header-nav__topic">
-                Introduction à GNU Linux
+                Activité : Gérer les permissions en environnement GNU-Linux
               </span>
             
           
@@ -392,36 +392,6 @@
     
   
   
-    <label class="md-nav__title" for="__toc">Table of contents</label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#1-cest-quoi-linux" title="1- C'est quoi Linux ?" class="md-nav__link">
-    1- C'est quoi Linux ?
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#2-de-gnu-a-linux" title="2- De GNU à Linux" class="md-nav__link">
-    2- De GNU à Linux
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#3-les-distributions-de-linux" title="3- Les distributions de Linux" class="md-nav__link">
-    3- Les distributions de Linux
-  </a>
-  
-</li>
-      
-      
-      
-      
-      
-    </ul>
-  
 </nav>
                   </div>
                 </div>
@@ -432,74 +402,149 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/rascolsin/edit/master/docs/tsti2d/linux/01-Intro.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                  <a href="https://github.com/rascolsin/edit/master/docs/tsti2d/linux/ACT3-gerer_permissions.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
                 
                 
-                <h1 id="introduction-a-gnu-linux">Introduction à GNU Linux</h1>
-<p><img alt="" src="/tsti2d/linux/figures/tux.png" /></p>
-<p><sup><a href="https://fr.wikipedia.org/wiki/Tux">Tux</a> l’emblème de Linux déssiné par Larry Ewing en 1996</sup></p>
-<h2 id="1-cest-quoi-linux">1- C'est quoi Linux ?</h2>
-<p>GNU Linux est spécial de part sa différence avec les systèmes d’exploitation dits <em>classiques</em> tels que Mac OSX ou Microsoft Windows. Une des principales différences réside dans le côté Open-Source et gratuit de cet OS. En effet Linux nous permet de modifier entièrement la composition du système, pour pouvoir le façonner à notre guise le code source, c'est à dire <em>la recette de fabrication</em> est rendu disponible à l’utilisateur, l’utilisation d’un tel système rend alors plus souple la programmation et l’expérimentation.</p>
-<p>A savoir Linux est connu pour sa grande portabilité, on peut le retrouver dans des téléphones portables, des machines à laver le linge, des serveurs informatiques, des supercalculateurs, des voitures ou encore des télévisions.</p>
-<p>Quelques exemples de systèmes utilisant Linux :</p>
+                <h1 id="activite-gerer-les-permissions-en-environnement-gnu-linux">Activité : Gérer les permissions en environnement GNU-Linux</h1>
+<p>Vous êtes technicien dans l'entreprise de service réseau AlbiTech et un de vos client M.Turing fait appel à vous pour la configuration d'un serveur linux, tournant sur une carte Raspberry Pi. Vous établissez ensemble le cahier des charges suivant :</p>
 <ul>
-<li>Les serveurs web : le site Wikipedia est hébergé sur un serveur LAMP (Linux Apache MySQL PHP)</li>
-<li>L'OS Android pour les smartphones</li>
-<li>Les <em>boxs</em> internet de Orange, Free, ou SFR</li>
-<li>Les GPS Tomtom</li>
+<li>Création de 4 comptes utilisateurs et de 3 nouveaux groupes:</li>
 </ul>
-<h2 id="2-de-gnu-a-linux">2- De GNU à Linux</h2>
-<p><img alt="" src="/tsti2d/linux/figures/Richard_Stallman.jpg" /></p>
-<p><sup><a href="http://leozub.livejournal.com/117908.html">"Richard Stallman"</a> by <a href="https://leozub.livejournal.com/">Leonid Dmitriev (leozub)</a> is licensed under <a href="https://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a></sup></p>
-<p>Tout commence avec UNIX dont les origines remontent en 1969, c’est un système qui fonctionne sans interface graphique, en ligne de code, concurrent direct à l’époque du système MS-DOS de Microsoft (sorti en 1984). En 1984 <a href="https://fr.wikipedia.org/wiki/Richard_Stallman">Richard Stallman</a>, chercheur en intelligence artificielle au MIT, créa le projet GNU, soit plus ou moins un système d’exploitation fonctionnant comme UNIX, la seule différence étant qu’UNIX était propriétaire et payant et GNU lui sera libre et gratuit.</p>
-<p><img alt="" src="/tsti2d/linux/figures/Linus_Torvalds.jpg" /></p>
-<p><sup><a href="https://commons.wikimedia.org/wiki/File:LinuxCon_Europe_Linus_Torvalds_03.jpg">"Linus Torvalds"</a> by <a href="https://commons.wikimedia.org/wiki/User:Krd">Krd</a> is licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a></sup></p>
-<p>Une autre personne va intervenir dans la création de ce nouveau système, c’est Le Finlandais <a href="https://fr.wikipedia.org/wiki/Linus_Torvalds">Linus Torvalds</a>, étudiant à l’université de Helsinki, qui entreprend de créer son propre système d’exploitation, qui a pris son nom (Linus + Unix).Les deux hommes se sont par la suite associés pour créer le système GNU Linux, Richard Stallman créant les programmes de base (programme de copie de fichier, de suppression de
-fichier, éditeur de texte), Linus Torvalds se lançant dans la création du « cœur » du système d'exploitation : le noyau. Le projet GNU (programmes libres) et Linux (noyau d'OS) ont fusionné pour créer GNU/Linux.</p>
-<h2 id="3-les-distributions-de-linux">3- Les distributions de Linux</h2>
-<p>Une distribution est en quelque sorte l’emballage de Linux, le coeur du système GNU Linux, restant le même pour toutes. Linux est un système d’exploitation très complet, avec de nombreux logiciels disponibles, les distributions ont été créées pour permette à l’utilisateur d’avoir un système correspondant à l’utilisation qu’il fait de sa machine. Toutes les distributions sont compatibles les unes avec les autres, la seule différence étant la prise en main.</p>
-<p>Parmi les choses variant d’une distribution à une autre, on peut citer :</p>
-<ul>
-<li><strong>L'installation</strong> : elle peut être très simplifiée comme très compliquée.</li>
-<li><strong>La gestion de l'installation des programmes</strong> : Si elle est bien faite et centralisée, elle peut rendre l'installation de
-nouveaux logiciels plus simple que sous Windows.</li>
-<li>Les programmes pré-installés sur l’ordinateur.</li>
-</ul>
-<p>Il existe plusieurs centaines de distributions Linux, certaines étant des forks (copies adaptées) de distributions principales, le site internet <a href="https://distrowatch.com">DistroWatch.com</a>, les recense pratiquement de manière exhaustive. Nous pouvons trouver sur wikipédia une timeline sous forme d'arbre généalogique des distributions, régulièrement mis à jour :</p>
-<p><img alt="" src="/tsti2d/linux/figures/Linux_Distribution_Timeline.svg.png" /></p>
-<p><a href="https://upload.wikimedia.org/wikipedia/commons/1/1b/Linux_Distribution_Timeline.svg">Le lien de l'image pour la visualiser en grand</a></p>
-<p>Nous donnons ci-dessous le descriptif des principales distributions trouvées en débuts de branches de la timeline précédente :</p>
 <table>
 <thead>
 <tr>
-<th>Distributions</th>
-<th>Année de création</th>
-<th>Description</th>
+<th>Utilisateur</th>
+<th>Groupes</th>
+<th>Pass</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><img alt="" src="/tsti2d/linux/figures/Debian_logo.svg" /></td>
-<td>1993</td>
-<td>C’est une des seules distributions qui soit gérée par des développeurs indépendants plutôt que par une entreprise. C'est une des distributions les plus populaires. La distribution qui équipe le Raspberry Pi, à savoir Raspbian est une sous-distribution de Debian. La distribution Ubuntu que nous utiliserons pour les séances de TP l’est de même.</td>
+<td>alan</td>
+<td>sudoers parents famille</td>
+<td>enigma</td>
 </tr>
 <tr>
-<td><img alt="" src="/tsti2d/linux/figures/RedHat.png" /></td>
-<td>1995</td>
-<td>Editée par une entreprise américaine, cette distribution propriétaire est célèbre et très répandue, notamment sur les serveurs. Fedora est une sous distribution de Red Hat, très utilisée dans le milieu universitaire.</td>
+<td>grace</td>
+<td>sudoers parents famille</td>
+<td>hopper</td>
 </tr>
 <tr>
-<td><img alt="" src="/tsti2d/linux/figures/OpenSUSE_logo.png" /></td>
-<td>1992</td>
-<td>Une distribution célèbre Allemande, soutenue par l’entreprise Novell.</td>
+<td>richard</td>
+<td>enfants famille</td>
+<td>stallman</td>
 </tr>
 <tr>
-<td><img alt="" src="/tsti2d/linux/figures/Slackware_web_logo.svg" /></td>
-<td>1993</td>
-<td>Une des plus anciennes distributions de Linux, qui existe encore aujourd’hui.</td>
+<td>linus</td>
+<td>enfants famille</td>
+<td>torvalds</td>
 </tr>
 </tbody>
 </table>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>Lorsque un utilisateur est créé Linux crée automatiquement le groupe du même nom.</p>
+</div>
+<ul>
+<li>Création de répertoires :</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Répertoire</th>
+<th>Propriétaire</th>
+<th>Groupe</th>
+<th>Droits</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>/media/photos</td>
+<td>alan</td>
+<td>famille</td>
+<td>rwx rwx r-x</td>
+</tr>
+<tr>
+<td>/partage/cadeaux</td>
+<td>alan</td>
+<td>parents</td>
+<td>rwx rwx ---</td>
+</tr>
+<tr>
+<td>/partage/administratif</td>
+<td>alan</td>
+<td>parents</td>
+<td>rwx rwx ---</td>
+</tr>
+<tr>
+<td>/home/alan/TuringTest</td>
+<td>alan</td>
+<td>alan</td>
+<td>rwx rwx ---</td>
+</tr>
+<tr>
+<td>/home/grace/Cobol</td>
+<td>grace</td>
+<td>grace</td>
+<td>rwx rwx ---</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>Transfert de fichiers dans les répertoires créés, depuis un serveur web :</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Fichiers</th>
+<th>Répertoire de destination</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>administratif/*</td>
+<td>/partage/administratif</td>
+</tr>
+<tr>
+<td>photos/*</td>
+<td>/media/photos</td>
+</tr>
+<tr>
+<td>cobol/*</td>
+<td>/home/grace/Cobol</td>
+</tr>
+<tr>
+<td>turingtest/*</td>
+<td>/home/alan/TuringTest</td>
+</tr>
+</tbody>
+</table>
+<p>Pour télécharger les fichiers à classer :</p>
+<div class="codehilite"><pre><span></span>wget https://rascolsin.fr/tsti2d/linux/ressources/files.zip
+</pre></div>
+
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>Pour décompresser l'archive .zip téléchargée vous aurez besoin de télécharger l'utilitaire <code class="codehilite">unzip</code> :
+<div class="codehilite"><pre><span></span>sudo apt install unzip
+
+<span class="c1">#Pour décompresser</span>
+unzip archive.zip
+</pre></div></p>
+</div>
+<p>Bien vérifier que les permissions des dossiers soient répercutées sur les fichiers.</p>
+<div class="admonition question">
+<p class="admonition-title">Question</p>
+<ol>
+<li>Créez les utilisateurs</li>
+<li>Créez les groupes</li>
+<li>Ajouter les utilisateurs aux groupes</li>
+<li>Créez les répertoires </li>
+<li>Téléchargez les fichiers et mettez les dans les bons répertoires</li>
+<li>Appliquez les permissions récursivement aux répertoires</li>
+<li>Appelez l'enseignant pour vérifier</li>
+</ol>
+</div>
                 
                   
                 

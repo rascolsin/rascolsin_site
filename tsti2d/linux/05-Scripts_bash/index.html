@@ -504,6 +504,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#5-les-parametres-positionnels" title="5 - Les paramètres positionnels" class="md-nav__link">
+    5 - Les paramètres positionnels
+  </a>
+  
+</li>
+      
       
       
       
@@ -763,6 +770,24 @@ Ci-dessus nous avons déclaré et initialisé 3 variables : Une chaîne de carac
 </pre></div>
 
 <script id="asciicast-hoBrPRCznnxjkYIG9k4oRR8J5" src="https://asciinema.org/a/hoBrPRCznnxjkYIG9k4oRR8J5.js" async></script>
+
+<h2 id="5-les-parametres-positionnels">5 - Les paramètres positionnels</h2>
+<p>Les paramètres positionnels sont les paramètres passés en entrée d'un script quand vous appelez celui-ci dans le terminal. Par exemple lors de l'utilisation de la commande <code class="codehilite">rm</code> on peut passer l'option <code class="codehilite">-r</code> qui est un paramètre positionnel : <code class="codehilite">rm -r</code></p>
+<p>Il est facile d'utiliser ces paramètres en Bash ils sont référencés par un numéro : 1 pour le premier paramètre, 2 pour le second ...</p>
+<p><div class="codehilite"><pre><span></span>$ mon_script param1 param2 param3
+</pre></div>
+Pour utiliser ces paramètres dans le script :</p>
+<div class="codehilite"><pre><span></span><span class="ch">#!/bin/bash</span>
+
+<span class="nv">$1</span> <span class="c1"># Utilisation du premier paramètre</span>
+<span class="nv">$2</span> <span class="c1"># Utilisation du second paramètre</span>
+<span class="nv">$3</span> <span class="c1"># Utilisation du troisième paramètre</span>
+</pre></div>
+
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>Le paramètre positionnel <code class="codehilite">$0</code> est une chaîne de caractères contenant le nom du script</p>
+</div>
                 
                   
                 
