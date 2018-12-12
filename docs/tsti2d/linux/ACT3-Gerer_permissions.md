@@ -49,3 +49,12 @@ wget https://rascolsin.fr/tsti2d/linux/ressources/files.zip
     ```
 
 Bien vérifier que les permissions des dossiers soient répercutées sur les fichiers.
+
+!!! question
+    1. Créez les utilisateurs
+    2. Créez les groupes
+    3. Ajouter les utilisateurs aux groupes
+    4. Créez les répertoires 
+    5. Téléchargez les fichiers et mettez les dans les bons répertoires
+    6. Appliquez les permissions récursivement aux répertoires
+    7. Appelez l'enseignant pour vérifier

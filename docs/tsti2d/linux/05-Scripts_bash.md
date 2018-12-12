@@ -240,3 +240,26 @@ done
 ```
 
 <script id="asciicast-hoBrPRCznnxjkYIG9k4oRR8J5" src="https://asciinema.org/a/hoBrPRCznnxjkYIG9k4oRR8J5.js" async></script>
+
+
+## 5 - Les paramètres positionnels 
+
+Les paramètres positionnels sont les paramètres passés en entrée d'un script quand vous appelez celui-ci dans le terminal. Par exemple lors de l'utilisation de la commande `rm` on peut passer l'option `-r` qui est un paramètre positionnel : `rm -r`
+
+Il est facile d'utiliser ces paramètres en Bash ils sont référencés par un numéro : 1 pour le premier paramètre, 2 pour le second ...
+
+```bash
+$ mon_script param1 param2 param3
+```
+Pour utiliser ces paramètres dans le script :
+
+```bash
+#!/bin/bash
+
+$1 # Utilisation du premier paramètre
+$2 # Utilisation du second paramètre
+$3 # Utilisation du troisième paramètre
+```
+
+!!! info
+    Le paramètre positionnel `$0` est une chaîne de caractères contenant le nom du script

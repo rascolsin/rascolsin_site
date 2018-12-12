@@ -20,7 +20,7 @@ Voici un extrait traduit en Français de l’explication donnée sur le site off
 
 *« L'idée d'un ordinateur petit et bon marché pour l'éducation est venue en 2006, alors qu'Eben Upton et ses collègues du laboratoire d'informatique de l'université de Cambridge, parmi lesquels Rob Mullins, Jack Lang et Alan Mycroft, se préoccupèrent de la baisse régulière, année après année, du nombre et du niveau de compétence des candidats souhaitant suivre des études d'informatique. De la situation des années 1990 où les candidats qui se présentaient étaient des programmeurs amateurs, le paysage des années 2000 diffère grandement : un candidat typique pourra n'avoir fait qu'un peu de design web. »*[^2]
 
-[^2]: Texte de la Raspberry Pi foundation, originale en Anglais
+[^2]: Texte de la Raspberry Pi foundation, original en Anglais
 
 Le constat en 2006 était le suivant :
 
@@ -140,3 +140,13 @@ Une fois la framboise démarrée un nom d'utilisateur et un mot de passe vous se
 login : pi
 pwd : raspberry
 ```
+
+!!! info
+    Quand vous tapez un mot de passe dans une console Linux rien ne s'affiche à l'écran. C'est normal ! C'est une sécurité supplémentaire, le mot de passe que vous tapez sera bien pris en compte.
+    
+### 4.4 Modification de la disposition clavier
+
+Lors du premier démarrage avec la distribution Raspbian light, la disposition du clavier est par défaut en Anglais (qwerty), nous donnons ci-dessous les étapes pour la changer :
+
+- Après vous êtres loggé `login : pi` `passwd : raspberry`, ouvrez le menu de configuration avec `sudo raspi-config`
+- Allez dans `4 Localisation Options` --> `Change Keyboard Layout` --> `Generic 105-key` --> `French`
