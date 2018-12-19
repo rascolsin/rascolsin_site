@@ -431,6 +431,13 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#3-sauvegarde-a-distance" title="3. Sauvegarde à distance" class="md-nav__link">
+    3. Sauvegarde à distance
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -512,6 +519,11 @@ Si il n'y parvient pas mettez fin au script.</p>
 <h3 id="2-envoi-de-mail">2. Envoi de mail</h3>
 <p>Nous souhaitons envoyer à l'utilisateur le résultat du déroulement de la sauvegarde, pour cela nous pouvons utiliser l'utilitaire <code class="codehilite">ssmtp</code> permettant d'envoyer des mails en ligne de commande. Cet utilitaire permet d'utiliser le service classique d'envoi de mail smtp fourni par votre fournisseur de mail, dans notre cas Gmail.</p>
 <p>Le site <a href="https://www.pihomeserver.fr/2015/08/13/envoyer-un-email-depuis-votre-raspberry-pi/">pihomeserver</a> donne une explication très détaillée sur l'utilisation de <code class="codehilite">ssmtp</code> pour envoyer un mail.</p>
+<h3 id="3-sauvegarde-a-distance">3. Sauvegarde à distance</h3>
+<p>Nous souhaitons à présent réaliser les sauvegardes non plus sur site mais à distance, pour cela paramétrez votre répertoire de destination pour utiliser <code class="codehilite">rsync</code> avec ssh.</p>
+<p>Exemple de variable contenant le répertoire de destination paramétré pour une sauvegarde avec ssh :</p>
+<div class="codehilite"><pre><span></span><span class="nv">REPERTOIRE_DESTINATION</span><span class="o">=</span><span class="s2">&quot;foo@192.168.1.2:/home/foo/Backup/Courant&quot;</span>
+</pre></div>
                 
                   
                 
