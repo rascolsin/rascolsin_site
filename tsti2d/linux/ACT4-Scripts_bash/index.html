@@ -510,12 +510,8 @@ Si il n'y parvient pas mettez fin au script.</p>
 <li><code class="codehilite">--backup-dir=[chemin dossier trash]</code> Fonctionne avec l'option précédente permet d'indiquer le chemin du dossier de sauvegarde</li>
 </ul>
 <h3 id="2-envoi-de-mail">2. Envoi de mail</h3>
-<p>Nous souhaitons envoyer à l'utilisateur le résultat du déroulement de la sauvegarde, pour cela nous pouvons utiliser l'utilitaire <code class="codehilite">msmtp</code> permettant d'envoyer des mails en ligne de commande. Cet utilitaire permet d'utiliser le service classique d'envoi de mail smtp fourni par votre fournisseur de mail, dans notre cas Gmail.</p>
-<p>Nous donnons le script suivant créé par <a href="https://github.com/JosefJezek">Josef Jezek</a> permettant de paramétrer efficacement <code class="codehilite">msmtp</code> avec une boîte Gmail. Vous pouvez télécharger ce script sur le Raspberry Pi avec la commande <code class="codehilite">wget</code></p>
-<div class="codehilite"><pre><span></span>wget https://rascolsin.fr/tsti2d/linux/ressources/setup-msmtp-for-gmail.sh
-</pre></div>
-
-<p>Le site Ubuntu france donne une explication très détaillée de l'utilisation de <code class="codehilite">msmtp</code> pour l'envoi de mails : <a href="https://doc.ubuntu-fr.org/tutoriel/comment_envoyer_un_mail_par_smtp_en_ligne_de_commande">Tutoriel comment envoyer un mail par smtp en ligne de commande</a></p>
+<p>Nous souhaitons envoyer à l'utilisateur le résultat du déroulement de la sauvegarde, pour cela nous pouvons utiliser l'utilitaire <code class="codehilite">ssmtp</code> permettant d'envoyer des mails en ligne de commande. Cet utilitaire permet d'utiliser le service classique d'envoi de mail smtp fourni par votre fournisseur de mail, dans notre cas Gmail.</p>
+<p>Le site <a href="https://www.pihomeserver.fr/2015/08/13/envoyer-un-email-depuis-votre-raspberry-pi/">pihomeserver</a> donne une explication très détaillée sur l'utilisation de <code class="codehilite">ssmtp</code> pour envoyer un mail.</p>
                 
                   
                 
