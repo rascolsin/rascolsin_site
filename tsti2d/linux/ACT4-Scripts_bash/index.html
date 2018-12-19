@@ -409,6 +409,33 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#exercice-3-script-de-backup" title="Exercice 3 : Script de backup" class="md-nav__link">
+    Exercice 3 : Script de backup
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-sauvegarde-locale" title="1. Sauvegarde locale" class="md-nav__link">
+    1. Sauvegarde locale
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-envoi-de-mail" title="2. Envoi de mail" class="md-nav__link">
+    2. Envoi de mail
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
       
       
       
@@ -451,6 +478,44 @@ Si il n'y parvient pas mettez fin au script.</p>
 <details class="note"><summary>Tirer un nombre aléatoire en Bash</summary><p>Pour créer un nombre aléatoire en Bash, il faut utiliser la fonction <code class="codehilite">$RANDOM</code> qui donne en retour un entier signé, soit un nombre entre 0 et 32767.</p>
 <p>Pour borner ce nombre aléatoire entre 2 valeurs : [a;b] il faut utiliser la fonction modulo noté <code class="codehilite"><span class="c">%</span></code> En Bash renvoyant le reste d'une division Euclidienne. En effet, le reste d'une division de x par y est toujours compris entre 0 et y (exclu)</p>
 </details>
+<h2 id="exercice-3-script-de-backup">Exercice 3 : Script de backup</h2>
+<p>Nous souhaitons réaliser un script de backup fonctionnant à l'aide de l'utilitaire <code class="codehilite">rsync</code>, la sauvegarde sera incrémentale avec mémorisation des fichiers supprimés. Nous donnons les étapes suivantes :</p>
+<h3 id="1-sauvegarde-locale">1. Sauvegarde locale</h3>
+<p>Dans un premier temps sauvegarder <code class="codehilite">Documents</code> dans <code class="codehilite">Backup</code> localement en utilisant l'arborescence suivante :</p>
+<div class="codehilite"><pre><span></span>/home
+<span class="p">|</span>--Documents
+<span class="p">|</span>----Fichier1
+<span class="p">|</span>----Fichier2
+<span class="p">|</span>----Fichier3
+<span class="p">|</span>
+<span class="p">|</span>--Backup
+<span class="p">|</span>----Courant
+<span class="p">|</span>----Trash
+</pre></div>
+
+<ul>
+<li><code class="codehilite">Documents</code> est le dossier dont le contenu est à sauvegarder</li>
+<li><code class="codehilite">Backup</code> est le dossier contenant la sauvegarde<ul>
+<li><code class="codehilite">Courant</code> est le clone de <code class="codehilite">Documents</code></li>
+<li><code class="codehilite">Trash</code> est une mémoire de tous les fichiers supprimés</li>
+</ul>
+</li>
+</ul>
+<p>Les options de l'utilitaire <code class="codehilite">rsync</code> à utiliser pour réaliser cette partie sont :</p>
+<ul>
+<li><code class="codehilite">-a</code> Option d'archivage, active la récursivité et permet de conserver les permissions</li>
+<li><code class="codehilite">-u</code> Option update, la synchronisation se produit seulement quand les fichiers de la sauvegarde sont plus anciens que les fichiers sauvegardés</li>
+<li><code class="codehilite">--delete</code> Option suppression, quand les fichiers sont supprimés sur la source, ils sont également supprimés sur la sauvegarde</li>
+<li><code class="codehilite">--backup</code> Option sauvegarde, les fichiers supprimés sont conservés</li>
+<li><code class="codehilite">--backup-dir=[chemin dossier trash]</code> Fonctionne avec l'option précédente permet d'indiquer le chemin du dossier de sauvegarde</li>
+</ul>
+<h3 id="2-envoi-de-mail">2. Envoi de mail</h3>
+<p>Nous souhaitons envoyer à l'utilisateur le résultat du déroulement de la sauvegarde, pour cela nous pouvons utiliser l'utilitaire <code class="codehilite">msmtp</code> permettant d'envoyer des mails en ligne de commande. Cet utilitaire permet d'utiliser le service classique d'envoi de mail smtp fourni par votre fournisseur de mail, dans notre cas Gmail.</p>
+<p>Nous donnons le script suivant créé par <a href="https://github.com/JosefJezek">Josef Jezek</a> permettant de paramétrer efficacement <code class="codehilite">msmtp</code> avec une boîte Gmail. Vous pouvez télécharger ce script sur le Raspberry Pi avec la commande <code class="codehilite">wget</code></p>
+<div class="codehilite"><pre><span></span>wget https://rascolsin.fr/tsti2d/linux/ressources/setup-msmtp-for-gmail.sh
+</pre></div>
+
+<p>Le site Ubuntu france donne une explication très détaillée de l'utilisation de <code class="codehilite">msmtp</code> pour l'envoi de mails : <a href="https://doc.ubuntu-fr.org/tutoriel/comment_envoyer_un_mail_par_smtp_en_ligne_de_commande">Tutoriel comment envoyer un mail par smtp en ligne de commande</a></p>
                 
                   
                 
