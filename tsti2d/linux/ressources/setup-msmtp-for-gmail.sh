@@ -6,7 +6,7 @@
 # Usage: setup-msmtp-for-gmail.sh
 
 sudo apt-get update -q
-sudo apt-get install msmtp-mta ca-certificates heirloom-mailx -yq
+sudo apt-get install msmtp-mta mailutils ca-certificates heirloom-mailx -yq
 
 if command -v zenity >/dev/null; then
   GMAIL_USER=$(zenity --entry --title="Gmail username" --text="Enter your gmail username with domain (username@gmail.com):")
