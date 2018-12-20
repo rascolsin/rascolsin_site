@@ -6,6 +6,8 @@
 
 * [Classe PSTI2D2](https://classroom.google.com/u/0/c/MjY3MTE3Mjg2MTda)
 * [Classe TSTI2D3](https://classroom.google.com/u/0/c/MTU0NzQwNDU3NTVa)
+* [Classe SICN](https://classroom.google.com/u/0/c/MTU0NzQwNDU3OTla) 
+* [Classe SCIT5](https://classroom.google.com/u/0/c/MTU0NzQwNDU3ODNa) Groupe CIT du vendredi matin 
 
 **N'oubliez pas de vous identifier à l'aide de votre mail Rascol en prenom.nom@e.rascol.net**
 
