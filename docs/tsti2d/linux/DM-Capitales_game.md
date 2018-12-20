@@ -19,4 +19,4 @@ wget https://rascolsin.fr/tsti2d/linux/ressources/capitales.txt
 
 Le script que vous devez réaliser, tire de manière aléatoire une ligne parmi les 196, affiche à l'écran le nom du pays et demande à l'utilisateur de saisir la capitale correspondante.
 
-L'utilisateur à le droit à 5 tentatives, si les 5 tentatives sont infructueuses le programme met fin à la partie.
+L'utilisateur a le droit à 5 tentatives, si les 5 tentatives sont infructueuses le programme met fin à la partie.

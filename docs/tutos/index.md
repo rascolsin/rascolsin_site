@@ -12,8 +12,7 @@
 !!! note ""
     L'utilisation du module Grove NFC de Seeed Studio avec une carte Arduino demande quelques ajustements, nous en donnons les détails dans ce post.
 
-### [Paramétrer une interruption sur événement du Serial](\tutos\arduino_serial_interrupt\arduino_serial_interrupt)
 
-!!! note ""
-    Pour certains projets Arduino nous avons parfois besoin de pouvoir réagir à n'importe quel moment sur événement du Serial. Le fonctionnement classique dans le `void loop()` avec `if (Serial.available())` permet de réagir sur un événement du Serial, seulement si celui-là apparaît quand le programme est sur la condition `if()`, or si la programme est déjà occupé à faire autre chose, jamais il ne détectera l'envoi. La seule solution est donc l'utilisation d'une interruption.
+## Linux
 
+### [Partager un fichier sur PasteBin en ligne de commande](\tutos\term_pastebin)
