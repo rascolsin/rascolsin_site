@@ -36,9 +36,18 @@ shuf -n 1 capitales.txt
 ```
 Cette commande va renvoyer une ligne (option `-n 1`) tirée au sort depuis le fichier `capitales.txt`
 
-### Commande `cut`
+### Commande `awk`
 
-L'utilitaire `cut` permet d'extraire une section de texte d'un fichier suivant un critère donné
+L'utilitaire `awk` permet d'extraire une section de texte d'un fichier suivant un critère donné, l'option `-F` permet de choisir un ou plusieurs caractères de séparation.
 
-### Commande `sed`
+Exemple d'utilisation pour séparer 2 éléments d'une chaîne de caractères :
+
+```bash
+couple="Romeo,Juliette"
+Homme="$(echo $couple | awk -F"," '{print $1}')" 
+Femme="$(echo $couple | awk -F"," '{print $2}')" 
+```
+
+Ici le caractère de séparation utilisé est `,` nous paramétrons donc `-F","`. `awk` sépare ensuite les termes, pour afficher le 1er donc `Romeo` dans notre exemple, il suffit d'ajouter `'{print $1}'`
+
 
