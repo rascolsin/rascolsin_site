@@ -79,7 +79,7 @@ Indonesia -- Jakarta
 Iran -- Tehran
 Iraq -- Baghdad
 Ireland -- Dublin
-Israel -- Jerusalem*
+Israel -- Jerusalem
 Italy -- Rome
 Jamaica -- Kingston
 Japan -- Tokyo
@@ -160,7 +160,7 @@ Slovenia -- Ljubljana
 Solomon Islands -- Honiara
 Somalia -- Mogadishu
 South Africa -- Pretoria, Cape Town, Bloemfontein
-South Sudan -- Juba 
+South Sudan -- Juba
 Spain -- Madrid
 Sri Lanka -- Colombo, Sri Jayewardenepura Kotte
 Sudan -- Khartoum
