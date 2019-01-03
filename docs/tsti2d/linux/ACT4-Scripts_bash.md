@@ -61,6 +61,7 @@ Les options de l'utilitaire `rsync` à utiliser pour réaliser cette partie sont
 * `--delete` Option suppression, quand les fichiers sont supprimés sur la source, ils sont également supprimés sur la sauvegarde
 * `--backup` Option sauvegarde, les fichiers supprimés sont conservés
 * `--backup-dir=[chemin dossier trash]` Fonctionne avec l'option précédente permet d'indiquer le chemin du dossier de sauvegarde
+* `--stats` Avec cette option rsync renvoi les statistiques à la fin de la réalisation de la sauvegarde
 
 
 ### 2. Envoi de mail
