@@ -418,15 +418,8 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#commande-cut" title="Commande cut" class="md-nav__link">
-    Commande cut
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#commande-sed" title="Commande sed" class="md-nav__link">
-    Commande sed
+  <a href="#commande-awk" title="Commande awk" class="md-nav__link">
+    Commande awk
   </a>
   
 </li>
@@ -478,9 +471,15 @@ Cuba -- Havana
 <p><div class="codehilite"><pre><span></span>shuf -n <span class="m">1</span> capitales.txt
 </pre></div>
 Cette commande va renvoyer une ligne (option <code class="codehilite">-n 1</code>) tirée au sort depuis le fichier <code class="codehilite">capitales.txt</code></p>
-<h3 id="commande-cut">Commande <code class="codehilite">cut</code></h3>
-<p>L'utilitaire <code class="codehilite">cut</code> permet d'extraire une section de texte d'un fichier suivant un critère donné</p>
-<h3 id="commande-sed">Commande <code class="codehilite">sed</code></h3>
+<h3 id="commande-awk">Commande <code class="codehilite">awk</code></h3>
+<p>L'utilitaire <code class="codehilite">awk</code> permet d'extraire une section de texte d'un fichier suivant un critère donné, l'option <code class="codehilite">-F</code> permet de choisir un ou plusieurs caractères de séparation.</p>
+<p>Exemple d'utilisation pour séparer 2 éléments d'une chaîne de caractères :</p>
+<div class="codehilite"><pre><span></span><span class="nv">couple</span><span class="o">=</span><span class="s2">&quot;Romeo,Juliette&quot;</span>
+<span class="nv">Homme</span><span class="o">=</span><span class="s2">&quot;</span><span class="k">$(</span><span class="nb">echo</span> <span class="nv">$couple</span> <span class="p">|</span> awk -F<span class="s2">&quot;,&quot;</span> <span class="s1">&#39;{print $1}&#39;</span><span class="k">)</span><span class="s2">&quot;</span> 
+<span class="nv">Femme</span><span class="o">=</span><span class="s2">&quot;</span><span class="k">$(</span><span class="nb">echo</span> <span class="nv">$couple</span> <span class="p">|</span> awk -F<span class="s2">&quot;,&quot;</span> <span class="s1">&#39;{print $2}&#39;</span><span class="k">)</span><span class="s2">&quot;</span> 
+</pre></div>
+
+<p>Ici le caractère de séparation utilisé est <code class="codehilite">,</code> nous paramétrons donc <code class="codehilite">-F&quot;,&quot;</code>. <code class="codehilite">awk</code> sépare ensuite les termes, pour afficher le 1er donc <code class="codehilite">Romeo</code> dans notre exemple, il suffit d'ajouter <code class="codehilite">&#39;{print $1}&#39;</code></p>
                 
                   
                 
