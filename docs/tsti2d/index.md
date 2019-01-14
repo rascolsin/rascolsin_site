@@ -2,6 +2,11 @@
 
 ## Séquences
 
+### ✔ [Orientation après un bac STI2D SIN](\tsti2d\orientation)
+
+!!! note ""
+    Présentation des différentes possibilités de poursuites d'études après un bac STI2D SIN. Présentation des différents BTS, DUT, Licences et Ecoles d'ingénieur de l'académie de Toulouse.
+
 ### ✔ [Programmation en environnement GNU-Linux](\tsti2d\linux)
 
 !!! note ""
