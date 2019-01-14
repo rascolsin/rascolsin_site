@@ -1,0 +1,643 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+      
+      
+      
+        <meta name="lang:clipboard.copy" content="Copy to clipboard">
+      
+        <meta name="lang:clipboard.copied" content="Copied to clipboard">
+      
+        <meta name="lang:search.language" content="fr">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="No matching documents">
+      
+        <meta name="lang:search.result.one" content="1 matching document">
+      
+        <meta name="lang:search.result.other" content="# matching documents">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-3.1.0">
+    
+    
+      
+        <title>Découverte des entrées sorties numériques - Rascol Sin</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/application.11e41852.css">
+      
+        <link rel="stylesheet" href="../../../assets/stylesheets/application-palette.22915126.css">
+      
+      
+        
+        
+        <meta name="theme-color" content="#546e7a">
+      
+    
+    
+      <script src="../../../assets/javascripts/modernizr.20ef595d.js"></script>
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+    
+    <link rel="stylesheet" href="../../../assets/fonts/material-icons.css">
+    
+    
+    
+  </head>
+  
+    
+    
+    <body dir="ltr" data-md-color-primary="blue-grey" data-md-color-accent="blue-grey">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448"
+    viewBox="0 0 416 448" id="__github">
+  <path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19-18.125
+        8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19 18.125-8.5
+        18.125 8.5 10.75 19 3.125 20.5zM320 304q0 10-3.125 20.5t-10.75
+        19-18.125 8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19
+        18.125-8.5 18.125 8.5 10.75 19 3.125 20.5zM360
+        304q0-30-17.25-51t-46.75-21q-10.25 0-48.75 5.25-17.75 2.75-39.25
+        2.75t-39.25-2.75q-38-5.25-48.75-5.25-29.5 0-46.75 21t-17.25 51q0 22 8
+        38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0
+        37.25-1.75t35-7.375 30.5-15 20.25-25.75 8-38.375zM416 260q0 51.75-15.25
+        82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5-41.75
+        1.125q-19.5 0-35.5-0.75t-36.875-3.125-38.125-7.5-34.25-12.875-30.25-20.25-21.5-28.75q-15.5-30.75-15.5-82.75
+        0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25
+        30.875q36.75-8.75 77.25-8.75 37 0 70 8 26.25-20.5
+        46.75-30.25t47.25-9.75q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34
+        99.5z" />
+</svg>
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+    
+      <a href="#decouverte-des-entrees-sorties-numeriques" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="../../.." title="Rascol Sin" class="md-header-nav__button md-logo">
+          
+            <i class="md-icon">code</i>
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            
+              <span class="md-header-nav__topic">
+                Rascol Sin
+              </span>
+              <span class="md-header-nav__topic">
+                Découverte des entrées sorties numériques
+              </span>
+            
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          
+            <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+            
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+          
+        
+      </div>
+      
+        <div class="md-flex__cell md-flex__cell--shrink">
+          <div class="md-header-nav__source">
+            
+
+
+  
+
+
+  <a href="https://github.com/rascolsin/" title="Go to repository" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#__github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      rascolsin
+    </div>
+  </a>
+
+          </div>
+        </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+        
+
+<nav class="md-tabs" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  <li class="md-tabs__item">
+    
+      <a href="../../.." title="Home" class="md-tabs__link md-tabs__link--active">
+        Home
+      </a>
+    
+  </li>
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../../tsti2d/" title="Classes" class="md-tabs__link">
+          Classes
+        </a>
+      
+    </li>
+  
+
+      
+        
+  <li class="md-tabs__item">
+    
+      <a href="../../../tutos/" title="Tutoriels" class="md-tabs__link md-tabs__link--active">
+        Tutoriels
+      </a>
+    
+  </li>
+
+      
+    </ul>
+  </div>
+</nav>
+      
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <a href="../../.." title="Rascol Sin" class="md-nav__button md-logo">
+      
+        <i class="md-icon">code</i>
+      
+    </a>
+    Rascol Sin
+  </label>
+  
+    <div class="md-nav__source">
+      
+
+
+  
+
+
+  <a href="https://github.com/rascolsin/" title="Go to repository" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#__github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      rascolsin
+    </div>
+  </a>
+
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../.." title="Home" class="md-nav__link">
+      Home
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2">
+    
+    <label class="md-nav__link" for="nav-2">
+      Classes
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        Classes
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../tsti2d/" title="TSTI2D" class="md-nav__link">
+      TSTI2D
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../" title="PSTI2D" class="md-nav__link">
+      PSTI2D
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../cit/" title="CIT" class="md-nav__link">
+      CIT
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../icn/" title="ICN" class="md-nav__link">
+      ICN
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../../tutos/" title="Tutoriels" class="md-nav__link">
+      Tutoriels
+    </a>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#realisation-de-lactivite" title="Réalisation de l'activité" class="md-nav__link">
+    Réalisation de l'activité
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1-utilisation-des-sorties-numeriques-sur-une-carte-arduino" title="1. Utilisation des sorties numériques sur une carte Arduino" class="md-nav__link">
+    1. Utilisation des sorties numériques sur une carte Arduino
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#11-clignotement-led-13" title="1.1 Clignotement led 13" class="md-nav__link">
+    1.1 Clignotement led 13
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#12-utilisation-du-module-grove-led" title="1.2 Utilisation du module Grove led" class="md-nav__link">
+    1.2 Utilisation du module Grove led
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-utilisation-des-entrees-numeriques-sur-une-carte-arduino" title="2. Utilisation des entrées numériques sur une carte Arduino" class="md-nav__link">
+    2. Utilisation des entrées numériques sur une carte Arduino
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21-bouton-poussoir-sans-condition" title="2.1 Bouton poussoir sans condition" class="md-nav__link">
+    2.1 Bouton poussoir sans condition
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-bouton-poussoir-avec-condition" title="2.2 Bouton poussoir avec condition" class="md-nav__link">
+    2.2 Bouton poussoir avec condition
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#23-allumage-inverse" title="2.3 Allumage inversé" class="md-nav__link">
+    2.3 Allumage inversé
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#24-allumage-et-extinction-explicites" title="2.4 Allumage et extinction explicites" class="md-nav__link">
+    2.4 Allumage et extinction explicites
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                  <a href="https://github.com/rascolsin/edit/master/docs/psti2d/arduino/ACT1-InOutNum.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                
+                
+                <h1 id="decouverte-des-entrees-sorties-numeriques">Découverte des entrées sorties numériques</h1>
+<h2 id="realisation-de-lactivite">Réalisation de l'activité</h2>
+<p>Pour cela vous devrez <strong>impérativement</strong> utiliser le squelette du programme Arduino donné ci-dessous :</p>
+<div class="codehilite"><pre><span></span> <span class="cm">/**************************************************************************************************</span>
+<span class="cm"> Nom ......... : Clignotement_led_13.ino</span>
+<span class="cm"> Role ........ : Fait clignoter la led reliée à la pin 13 d&#39;une carte Arduino MEGA</span>
+<span class="cm">                                 Cycle : 500ms OFF; 500ms ON</span>
+<span class="cm"> Auteur ...... : Votre nom</span>
+<span class="cm"> Classe ...... : Votre classe</span>
+<span class="cm"> Etablissement : Lycée Louis Rascol, Albi, FRANCE &lt;http://louis-rascol.entmip.fr/&gt;</span>
+<span class="cm"> Mail ........ : Votre_mail@e.rascol.net</span>
+<span class="cm"> Version ..... : V0.0 du xx/xx/16</span>
+<span class="cm"> Licence ..... : Copyright (C) 2016  Votre nom</span>
+
+<span class="cm">                 This program is free software: you can redistribute it and/or modify</span>
+<span class="cm">                 it under the terms of the GNU General Public License as published by</span>
+<span class="cm">                 the Free Software Foundation, either version 3 of the License, or</span>
+<span class="cm">                 (at your option) any later version.</span>
+
+<span class="cm">                 This program is distributed in the hope that it will be useful,</span>
+<span class="cm">                 but WITHOUT ANY WARRANTY; without even the implied warranty of</span>
+<span class="cm">                 MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the</span>
+<span class="cm">                 GNU General Public License for more details.</span>
+
+<span class="cm">                 You should have received a copy of the GNU General Public License</span>
+<span class="cm">                 along with this program.  If not, see &lt;http://www.gnu.org/licenses/&gt;</span>
+
+<span class="cm"> Compilation . : Avec l&#39;IDE Arduino</span>
+<span class="cm"> ****************************************************************************************************/</span>
+
+ <span class="c1">//Ajout de bibliothèques</span>
+
+
+ <span class="c1">//Déclarations de constantes</span>
+
+
+ <span class="c1">//Déclaration de variables</span>
+
+
+ <span class="kt">void</span> <span class="nf">setup</span><span class="p">()</span>
+ <span class="p">{</span>
+     <span class="c1">//Insérez ici vos paramètres</span>
+ <span class="p">}</span>
+
+ <span class="kt">void</span> <span class="nf">loop</span><span class="p">()</span>
+ <span class="p">{</span>
+   <span class="c1">//Insérez ici votre programme principal</span>
+ <span class="p">}</span>
+</pre></div>
+
+<p>Pour la suite vous pouvez télécharger un fichier zip squelette pré-rempli : <a href="/psti2d/arduino/ressources/Squelette_Arduino_Rascol.zip">Télécharger</a></p>
+<p><strong>Marche à suivre :</strong></p>
+<ol>
+<li><strong>Faire l'algorithme</strong> du programme en utilisant la notation algorithmique normalisée.</li>
+<li>Créer un fichier Arduino et y copier-coller le squelette.</li>
+<li>Codez votre algorithme <strong>ne soyez pas avare en commentaires</strong>.</li>
+<li>Téléversez sur la carte et <strong>vérifiez le bon fonctionnement</strong>.</li>
+<li>Appelez le professeur pour valider.</li>
+</ol>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>La validation de l'exercice sera uniquement effectuée lors de la présentation d'un <strong>algorithme juste</strong> et d'un <strong>code Arduino suffisamment commenté en fonctionnement</strong>.</p>
+</div>
+<h2 id="1-utilisation-des-sorties-numeriques-sur-une-carte-arduino">1. Utilisation des sorties numériques sur une carte Arduino</h2>
+<h3 id="11-clignotement-led-13">1.1 Clignotement led 13</h3>
+<p>Nous souhaitons dans un premier temps faire clignoter la led 13 d'une carte Arduino MEGA. La led devra rester allumée <strong>500ms</strong> et éteinte <strong>500ms</strong>.</p>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>La led 13 est la led reliée à la pin 13 soudée sur la carte Arduino MEGA ou Arduino UNO comme le montre la figure ci-dessous.</p>
+</div>
+<p><img alt="" src="/psti2d/arduino/figures/Led13.png" /></p>
+<h3 id="12-utilisation-du-module-grove-led">1.2 Utilisation du module Grove led</h3>
+<p><img alt="" src="/psti2d/arduino/figures/Led_Grove.png" /></p>
+<p>À présent utilisez le programme précédent pour faire clignoter la led d'un module LED Grove relié à la <strong>pin numérique 2</strong>.
+Nous utiliserons le même cycle de clignotement que tout à l'heure soit, <strong>500ms éteinte / 500ms allumée</strong>.</p>
+<h2 id="2-utilisation-des-entrees-numeriques-sur-une-carte-arduino">2. Utilisation des entrées numériques sur une carte Arduino</h2>
+<h3 id="21-bouton-poussoir-sans-condition">2.1 Bouton poussoir sans condition</h3>
+<p><img alt="" src="/psti2d/arduino/figures/BP_Grove.png" /></p>
+<p>Allumer la led du module Grove de la partie 1 lors d'un appui sur le bouton poussoir. La led est toujours reliée à la <strong>pin numérique 2</strong> et le bouton poussoir à la <strong>pin numérique 6</strong>. Dans un premier temps, <strong>ne pas se servir</strong> de la condition <code class="codehilite">if()</code> ou <code class="codehilite">if() else</code>.</p>
+<h3 id="22-bouton-poussoir-avec-condition">2.2 Bouton poussoir avec condition</h3>
+<p>À présent vous devez faire le même exercice que précédemment mais en utilisant une condition de type <code class="codehilite">if()</code> ou <code class="codehilite">if() else</code>. Nous utiliserons les mêmes pins.</p>
+<h3 id="23-allumage-inverse">2.3 Allumage inversé</h3>
+<p>Cette fois-ci il s'agit d'allumer la led quand le bouton poussoir est relâché et de l'éteindre quand on appui sur celui-ci. Nous utiliserons les mêmes pins.</p>
+<h3 id="24-allumage-et-extinction-explicites">2.4 Allumage et extinction explicites</h3>
+<p>Pour finir, un appui sur le bouton poussoir allumera la led et la laissera allumée, un autre appui éteindra la led et la laissera éteinte.</p>
+                
+                  
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Licence Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">L'ensemble du contenu du site rascolsin.fr</span> de <span xmlns:cc="http://creativecommons.org/ns#" property="cc:attributionName">Joris Serrand</span> est mis à disposition selon les termes de la <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">licence Creative Commons Attribution <br />  Partage dans les Mêmes Conditions 4.0 International</a>.  <br />Made with ❤ in <a href="https://en.wikipedia.org/wiki/Albi">Albi</a>
+          </div>
+        
+        powered by
+        <a href="https://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a>
+      </div>
+      
+        
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../../../assets/javascripts/application.9e1f3b71.js"></script>
+      
+        
+        
+          
+          <script src="../../../assets/javascripts/lunr/lunr.stemmer.support.js"></script>
+          
+            
+              
+              
+                <script src="../../../assets/javascripts/lunr/lunr.fr.js"></script>
+              
+            
+          
+          
+        
+      
+      <script>app.initialize({version:"1.0.4",url:{base:"../../.."}})</script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+      
+    
+    
+      
+    
+  </body>
+</html>

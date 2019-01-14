@@ -1,0 +1,639 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+      
+      
+      
+        <meta name="lang:clipboard.copy" content="Copy to clipboard">
+      
+        <meta name="lang:clipboard.copied" content="Copied to clipboard">
+      
+        <meta name="lang:search.language" content="fr">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="No matching documents">
+      
+        <meta name="lang:search.result.one" content="1 matching document">
+      
+        <meta name="lang:search.result.other" content="# matching documents">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-3.1.0">
+    
+    
+      
+        <title>Les variables et constantes dans un code Arduino - Rascol Sin</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/application.11e41852.css">
+      
+        <link rel="stylesheet" href="../../../assets/stylesheets/application-palette.22915126.css">
+      
+      
+        
+        
+        <meta name="theme-color" content="#546e7a">
+      
+    
+    
+      <script src="../../../assets/javascripts/modernizr.20ef595d.js"></script>
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+    
+    <link rel="stylesheet" href="../../../assets/fonts/material-icons.css">
+    
+    
+    
+  </head>
+  
+    
+    
+    <body dir="ltr" data-md-color-primary="blue-grey" data-md-color-accent="blue-grey">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448"
+    viewBox="0 0 416 448" id="__github">
+  <path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19-18.125
+        8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19 18.125-8.5
+        18.125 8.5 10.75 19 3.125 20.5zM320 304q0 10-3.125 20.5t-10.75
+        19-18.125 8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19
+        18.125-8.5 18.125 8.5 10.75 19 3.125 20.5zM360
+        304q0-30-17.25-51t-46.75-21q-10.25 0-48.75 5.25-17.75 2.75-39.25
+        2.75t-39.25-2.75q-38-5.25-48.75-5.25-29.5 0-46.75 21t-17.25 51q0 22 8
+        38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0
+        37.25-1.75t35-7.375 30.5-15 20.25-25.75 8-38.375zM416 260q0 51.75-15.25
+        82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5-41.75
+        1.125q-19.5 0-35.5-0.75t-36.875-3.125-38.125-7.5-34.25-12.875-30.25-20.25-21.5-28.75q-15.5-30.75-15.5-82.75
+        0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25
+        30.875q36.75-8.75 77.25-8.75 37 0 70 8 26.25-20.5
+        46.75-30.25t47.25-9.75q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34
+        99.5z" />
+</svg>
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+    
+      <a href="#les-variables-et-constantes-dans-un-code-arduino" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="../../.." title="Rascol Sin" class="md-header-nav__button md-logo">
+          
+            <i class="md-icon">code</i>
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            
+              <span class="md-header-nav__topic">
+                Rascol Sin
+              </span>
+              <span class="md-header-nav__topic">
+                Les variables et constantes dans un code Arduino
+              </span>
+            
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          
+            <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+            
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+          
+        
+      </div>
+      
+        <div class="md-flex__cell md-flex__cell--shrink">
+          <div class="md-header-nav__source">
+            
+
+
+  
+
+
+  <a href="https://github.com/rascolsin/" title="Go to repository" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#__github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      rascolsin
+    </div>
+  </a>
+
+          </div>
+        </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+        
+
+<nav class="md-tabs" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  <li class="md-tabs__item">
+    
+      <a href="../../.." title="Home" class="md-tabs__link md-tabs__link--active">
+        Home
+      </a>
+    
+  </li>
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../../tsti2d/" title="Classes" class="md-tabs__link">
+          Classes
+        </a>
+      
+    </li>
+  
+
+      
+        
+  <li class="md-tabs__item">
+    
+      <a href="../../../tutos/" title="Tutoriels" class="md-tabs__link md-tabs__link--active">
+        Tutoriels
+      </a>
+    
+  </li>
+
+      
+    </ul>
+  </div>
+</nav>
+      
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <a href="../../.." title="Rascol Sin" class="md-nav__button md-logo">
+      
+        <i class="md-icon">code</i>
+      
+    </a>
+    Rascol Sin
+  </label>
+  
+    <div class="md-nav__source">
+      
+
+
+  
+
+
+  <a href="https://github.com/rascolsin/" title="Go to repository" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#__github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      rascolsin
+    </div>
+  </a>
+
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../.." title="Home" class="md-nav__link">
+      Home
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2">
+    
+    <label class="md-nav__link" for="nav-2">
+      Classes
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        Classes
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../tsti2d/" title="TSTI2D" class="md-nav__link">
+      TSTI2D
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../" title="PSTI2D" class="md-nav__link">
+      PSTI2D
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../cit/" title="CIT" class="md-nav__link">
+      CIT
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../icn/" title="ICN" class="md-nav__link">
+      ICN
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../../tutos/" title="Tutoriels" class="md-nav__link">
+      Tutoriels
+    </a>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-les-types-de-variables" title="1. Les types de variables" class="md-nav__link">
+    1. Les types de variables
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#11-signe-ou-non-signe" title="1.1 Signé ou non Signé ??" class="md-nav__link">
+    1.1 Signé ou non Signé ??
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#12-le-booleen-boolean" title="1.2 Le booléen : boolean" class="md-nav__link">
+    1.2 Le booléen : boolean
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#13-loctet-byte" title="1.3 L'octet : byte" class="md-nav__link">
+    1.3 L'octet : byte
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#14-lentier-int" title="1.4 L'entier : int" class="md-nav__link">
+    1.4 L'entier : int
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#15-le-flottant-float" title="1.5 Le flottant : float" class="md-nav__link">
+    1.5 Le flottant : float
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#16-le-caractere-char" title="1.6 Le caractère : char" class="md-nav__link">
+    1.6 Le caractère : char
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-la-declaration-et-linitialisation-de-variables" title="2. La déclaration et l'initialisation de variables" class="md-nav__link">
+    2. La déclaration et l'initialisation de variables
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-la-declaration-de-constantes" title="3. La déclaration de constantes" class="md-nav__link">
+    3. La déclaration de constantes
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31-utilisation-de-const" title="3.1 Utilisation de const" class="md-nav__link">
+    3.1 Utilisation de const
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32-utilisation-de-define" title="3.2 Utilisation de #define" class="md-nav__link">
+    3.2 Utilisation de #define
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                  <a href="https://github.com/rascolsin/edit/master/docs/psti2d/arduino/02-Variables_constantes.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                
+                
+                <h1 id="les-variables-et-constantes-dans-un-code-arduino">Les variables et constantes dans un code Arduino</h1>
+<p>La variable est en programmation un système de stockage de données. Par analogie une variable peut être comparée à une boîte, le type de variable correspondant à la taille de la boîte, plus le type est codé sur un nombre de bits important, plus la boîte sera grande. L'intérieur d'une variable contient un nombre (ou un caractère si le type le permet) modifiable à souhait tout au long du programme.</p>
+<p><img alt="" src="/psti2d/arduino/figures/Boites_gigognes.svg" /></p>
+<h2 id="1-les-types-de-variables">1. Les types de variables</h2>
+<h3 id="11-signe-ou-non-signe">1.1 Signé ou non Signé ??</h3>
+<p>Vous avez peut-être pu remarquer au cours de vos lectures la référence à un type de variable signé ou non signé, qu'est ce que ça peut bien vouloir dire ?
+La "signature" est un moyen en programmation pour coder les nombres relatifs, un type de variable non signé comme par exemple un <code class="codehilite">unsigned int</code> ne pourra pas contenir un nombre relatif inférieur à 0 comme -9. À contrario, un type signé comme <code class="codehilite">int</code> pourra contenir un nombre relatif supérieur ou inférieur à 0.</p>
+<h3 id="12-le-booleen-boolean">1.2 Le booléen : <code class="codehilite">boolean</code></h3>
+<p><img alt="" src="/psti2d/arduino/figures/Boite_bool.svg" /></p>
+<p>Le booléen noté <code class="codehilite">boolean</code> sur Arduino, est le plus petit type de variable que vous serez emmené à rencontrer, il est codé sur seulement 2 bits. Son contenu ne peut être que <strong>0 ou 1</strong>, soit <code class="codehilite">True</code>ou <code class="codehilite">False</code>sur Arduino.
+Ce type est souvent utilisé pour stocker l'état d'un capteur numérique, par exemple un bouton poussoir : <code class="codehilite">True</code>si le bouton est appuyé, <code class="codehilite">False</code>si il est relâché. C'est un type non signé.</p>
+<h3 id="13-loctet-byte">1.3 L'octet : <code class="codehilite">byte</code></h3>
+<p><img alt="" src="/psti2d/arduino/figures/Boite_octet.svg" /></p>
+<p>L'octet noté <code class="codehilite">byte</code> sous Arduino, est un type de variable codé sur 8 bits. Son contenu est un nombre pouvant aller de <strong>0 à 255</strong>. C'est un type non signé.</p>
+<h3 id="14-lentier-int">1.4 L'entier : <code class="codehilite">int</code></h3>
+<p><img alt="" src="/psti2d/arduino/figures/Boite_entier.svg" /></p>
+<p>L'entier noté <code class="codehilite">int</code> sous Arduino, est un type de variable <strong>signé</strong> codé sur 16 bits. Son contenu est un nombre pouvant aller de <span><span class="MathJax_Preview">{-2}^{15}</span><script type="math/tex">{-2}^{15}</script></span> à <span><span class="MathJax_Preview">{2}^{15}-1</span><script type="math/tex">{2}^{15}-1</script></span> soit de -32768 à 32767. Le calcul des extrema se fait sur 15 bits et non pas sur 16 car le bit de poids fort est réservé pour le bit de signe, si celui-ci est à 1 le complément à deux du nombre qui suit est interprété comme un négatif, inversement pour un positif.</p>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>Il existe le type <code class="codehilite">unsigned int</code> pour un entier non signé. Les valeurs limites sont donc de 0 à <span><span class="MathJax_Preview">2^{16}-1</span><script type="math/tex">2^{16}-1</script></span>, soit de 0 à  65 535.</p>
+</div>
+<h3 id="15-le-flottant-float">1.5 Le flottant : <code class="codehilite">float</code></h3>
+<p><img alt="" src="/psti2d/arduino/figures/Boite_flottant.svg" /></p>
+<p>Le flottant noté <code class="codehilite">float</code> sous Arduino, est un type de variable <strong>signé</strong> codé sur 4 octets soit 32 bits. Son contenu est un nombre pouvant aller de 3.4028235E+38 à -3.4028235E+38.</p>
+<p><strong>Codage d'un nombre en virgule flottante :</strong>
+La virgule flottante est une technique pour stocker dans une variable un nombre réel. Pour cela il suffit de décomposer le nombre de la manière suivante :</p>
+<p><img alt="" src="/psti2d/arduino/figures/Flottant.svg" /></p>
+<ul>
+<li>Le bit de poids fort est le bit de signe, il est à 1 si le nombre est négatif, à 0 si il est positif.</li>
+<li>La mantisse contient les chiffres significatifs du nombre elle est codée sur 23 bits.</li>
+<li>L'exposant représente la place de la virgule dans le nombre, il est codé sur 8 bits.</li>
+</ul>
+<h3 id="16-le-caractere-char">1.6 Le caractère : <code class="codehilite">char</code></h3>
+<p><img alt="" src="/psti2d/arduino/figures/Boite_char.svg" /></p>
+<p>Le caractère noté <code class="codehilite">char</code> sous Arduino, est un type de variable codé sur 8 bits. Son contenu est un <strong>caractère</strong>, codé avec son code décimal ASCII correspondant. Pour enregistrer un caractère il suffit de le mettre entre côtes : <code class="codehilite">&#39;a&#39;</code> , si on souhaite enregistrer le code <strong>décimal</strong> ASCII correspondant au caractère souhaité il suffit de le noter tel quel. Pour <code class="codehilite">&#39;a&#39;</code> le code ASCII correspondant est 97.</p>
+<p><strong>Le codage ASCII</strong></p>
+<p>L'ASCII pour <em>American Standard Code for Information Interchange</em> (Code américain normalisé pour l'échange d'information) est un système de codage des caractères inventé dans les 60 par l'ISO (<em>International Organization for Standardization</em>). C'est un système de codage devenu un standard pour transmettre l'information de manière numérique. Pour de plus amples renseignements sur la création du code ASCII n'hésitez pas à consulter la page <a href="https://fr.wikipedia.org/wiki/American_Standard_Code_for_Information_Interchange">Wikipédia</a> dédiée.</p>
+<p><img alt="" src="/psti2d/arduino/figures/ASCII-Table.svg" /></p>
+<h2 id="2-la-declaration-et-linitialisation-de-variables">2. La déclaration et l'initialisation de variables</h2>
+<p>Pour utiliser une variable dans son programme Arduino il faut au préalable la créer, en programmation on parlera de <strong>déclarer une variable</strong>. Le langage C/C++ autorise la déclaration de variables n'importe où dans le code, cependant il est préférable pour les novices de <strong>faire toutes les déclarations et initialisations au début</strong>, juste après les ajouts de bibliothèques (<code class="codehilite">#define ...</code>). Quand on déclare une variable on a pour obligation de lui donner un nom, et de préciser son type, il est préférable également de l'initialiser, c'est à dire lui donner une valeur de départ sans quoi un nombre indépendant de notre volonté sera enregistré.</p>
+<p>Pour déclarer et initialiser une variable il suffit d'utiliser l'instruction suivante :</p>
+<p><img alt="" src="/psti2d/arduino/figures/Declaration_variable.svg" /></p>
+<p>Dans cet exemple nous venons de déclarer une variable de type entier appelée <em>ma_variable</em> et initialisée à 124.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Les noms de variables ne doivent <strong>pas contenir d'espaces, d'accents, de caractères spéciaux autre que <code class="codehilite">_</code></strong>. De plus le langage C/C++ est <strong>sensible à la casse</strong> c'est à dire qu'il différencie les minuscules des majuscules.</p>
+</div>
+<p><strong>Autres exemples :</strong></p>
+<ul>
+<li>Pour un booléen : <code class="codehilite">boolean etat_bp=true;</code> Initialisation d'un booléen appelé etat_bp à l'état haut.</li>
+<li>Pour un flottant : <code class="codehilite">float capteur=56.4;</code> Initialisation d'un flottant appelé capteur à la valeur 56.4.</li>
+<li>Pour un octet : <code class="codehilite">byte toto=23;</code> Initialisation d'un octet appelé toto à la valeur 23.</li>
+<li>Pour un caractère : <code class="codehilite">char mon_caractere=&#39;b&#39;;</code> ou <code class="codehilite">char mon_caractere=98;</code> Initialisation d'un caractère appelé mon_caractere à la valeur 98 code ASCII correspondant à 'b'.</li>
+</ul>
+<h2 id="3-la-declaration-de-constantes">3. La déclaration de constantes</h2>
+<p>Une constante à l'inverse d'une variable, ne varie pas lors de l'exécution du programme elle reste à la valeur à laquelle elle a été initialisée. Cela est très utile pour <strong>définir un numéro de pin ou une constante comme le nombre pi.</strong> Nous développons ci-dessous 2 méthodes pour déclarer une constante :</p>
+<h3 id="31-utilisation-de-const">3.1 Utilisation de <code class="codehilite">const</code></h3>
+<p>La définition d'une constante grâce au mot clé <code class="codehilite">const</code> est la méthode à privilégier, il suffit pour cela de choisir le bon type de variable pouvant contenir notre constante et utiliser l'instruction suivante :</p>
+<p><img alt="" src="/psti2d/arduino/figures/Declaration_constante.svg" /></p>
+<p>Ici nous déclarons une constante appelée <code class="codehilite">ma_constante</code> et initialisée à la valeur 234.</p>
+<h3 id="32-utilisation-de-define">3.2 Utilisation de <code class="codehilite">#define</code></h3>
+<p>La définition d'une constante à l'aide du mot clé <code class="codehilite">#define</code> est <strong>à éviter</strong>, toutefois nous tenons à vous montrer son utilisation ci-dessous :</p>
+<p><img alt="" src="/psti2d/arduino/figures/Declaration_constante_define.svg" /></p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Le <code class="codehilite">#define</code> attribue dans l'exemple ci-dessus le mot <code class="codehilite">ma_constante</code> à <code class="codehilite">234</code> avant la compilation. C'est à dire que dans tout le code à chaque fois que le mot <code class="codehilite">ma_constante</code> sera utilisé il sera remplacé par <code class="codehilite">234</code>, je vous laisse voir les problèmes que cela peut poser dans le code...</p>
+</div>
+                
+                  
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Licence Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">L'ensemble du contenu du site rascolsin.fr</span> de <span xmlns:cc="http://creativecommons.org/ns#" property="cc:attributionName">Joris Serrand</span> est mis à disposition selon les termes de la <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">licence Creative Commons Attribution <br />  Partage dans les Mêmes Conditions 4.0 International</a>.  <br />Made with ❤ in <a href="https://en.wikipedia.org/wiki/Albi">Albi</a>
+          </div>
+        
+        powered by
+        <a href="https://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a>
+      </div>
+      
+        
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../../../assets/javascripts/application.9e1f3b71.js"></script>
+      
+        
+        
+          
+          <script src="../../../assets/javascripts/lunr/lunr.stemmer.support.js"></script>
+          
+            
+              
+              
+                <script src="../../../assets/javascripts/lunr/lunr.fr.js"></script>
+              
+            
+          
+          
+        
+      
+      <script>app.initialize({version:"1.0.4",url:{base:"../../.."}})</script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+      
+    
+    
+      
+    
+  </body>
+</html>
