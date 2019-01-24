@@ -67,7 +67,7 @@ Vous avez à votre disposition pour réaliser ce système, les macros, capteurs 
 |---|---|---|
 |Ecrire sur le lcd|`LCD_ecrire("chaine de carcactères")` ou `LCD_ecrire(variable)`|Permet d'écrire une chaîne de caractères ou le contenu d'une variable sur l'écran.|
 |Effacer le contenu de l'écran lcd|`LCD_effacer()`|Permet d'effacer l'écran|
-|Lire le clavier numérique|`flottant nombre=Lire_clavier()`|Permet de lire le nombre ou le choix rentrés par l'utilisateur, renvoi le résultat dans un flottant.|
+|Lire le clavier numérique|`flottant nombre` $\Leftarrow$ `Lire_clavier()`|Permet de lire le nombre ou le choix rentrés par l'utilisateur, renvoi le résultat dans un flottant.|
 
 ## 2. Travail à faire
 
