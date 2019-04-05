@@ -212,16 +212,43 @@
 
       
         
-  
-  
-    <li class="md-tabs__item">
+  <li class="md-tabs__item">
+    
+      <a href="../../../snt/" title="SNT" class="md-tabs__link md-tabs__link--active">
+        SNT
+      </a>
+    
+  </li>
+
       
-        <a href="../../../tsti2d/" title="Classes" class="md-tabs__link">
-          Classes
-        </a>
+        
+  <li class="md-tabs__item">
+    
+      <a href="../../../si-cit/" title="SI-CIT" class="md-tabs__link md-tabs__link--active">
+        SI-CIT
+      </a>
+    
+  </li>
+
       
-    </li>
-  
+        
+  <li class="md-tabs__item">
+    
+      <a href="../../" title="PSTI2D" class="md-tabs__link md-tabs__link--active">
+        PSTI2D
+      </a>
+    
+  </li>
+
+      
+        
+  <li class="md-tabs__item">
+    
+      <a href="../../../tsti2d/" title="TSTI2D" class="md-tabs__link md-tabs__link--active">
+        TSTI2D
+      </a>
+    
+  </li>
 
       
         
@@ -296,35 +323,28 @@
       
 
 
-  <li class="md-nav__item md-nav__item--nested">
-    
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2">
-    
-    <label class="md-nav__link" for="nav-2">
-      Classes
-    </label>
-    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
-      <label class="md-nav__title" for="nav-2">
-        Classes
-      </label>
-      <ul class="md-nav__list" data-md-scrollfix>
-        
-        
-          
-          
-          
-
-
   <li class="md-nav__item">
-    <a href="../../../tsti2d/" title="TSTI2D" class="md-nav__link">
-      TSTI2D
+    <a href="../../../snt/" title="SNT" class="md-nav__link">
+      SNT
     </a>
   </li>
 
-        
-          
-          
-          
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../../si-cit/" title="SI-CIT" class="md-nav__link">
+      SI-CIT
+    </a>
+  </li>
+
+    
+      
+      
+      
 
 
   <li class="md-nav__item">
@@ -333,33 +353,16 @@
     </a>
   </li>
 
-        
-          
-          
-          
+    
+      
+      
+      
 
 
   <li class="md-nav__item">
-    <a href="../../../cit/" title="CIT" class="md-nav__link">
-      CIT
+    <a href="../../../tsti2d/" title="TSTI2D" class="md-nav__link">
+      TSTI2D
     </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../../icn/" title="ICN" class="md-nav__link">
-      ICN
-    </a>
-  </li>
-
-        
-      </ul>
-    </nav>
   </li>
 
     
@@ -403,22 +406,22 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#2-initialisations-et-declarations-de-variables-ou-constantes" title="2. Initialisations et déclarations de variables ou constantes" class="md-nav__link">
-    2. Initialisations et déclarations de variables ou constantes
+  <a href="#2-variablesconstantes" title="2. Variables/Constantes" class="md-nav__link">
+    2. Variables/Constantes
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#3-le-parametrage-du-programme-setup" title="3. Le paramétrage du programme setup()" class="md-nav__link">
-    3. Le paramétrage du programme setup()
+  <a href="#3-fonction-setup" title="3. Fonction setup()" class="md-nav__link">
+    3. Fonction setup()
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#4-le-programme-principal-loop" title="4. Le programme principal loop()" class="md-nav__link">
-    4. Le programme principal loop()
+  <a href="#4-fonction-loop" title="4. Fonction loop()" class="md-nav__link">
+    4. Fonction loop()
   </a>
   
 </li>
@@ -483,7 +486,7 @@
 <span class="cm">****************************************************************************************************/</span>
 </pre></div>
 
-<h2 id="2-initialisations-et-declarations-de-variables-ou-constantes">2. Initialisations et déclarations de variables ou constantes</h2>
+<h2 id="2-variablesconstantes">2. Variables/Constantes</h2>
 <p>C'est dans cette partie que nous faisons les ajouts de bibliothèques nécessaires à l'exécution de notre code, ainsi que les déclarations et initialisations de variables et constantes. Même si le c++ autorise les déclarations n'importe où dans le programme, il est vivement conseillé de toutes les regrouper dans cette partie.</p>
 <p>Voici un exemple de d'ajout de bibliothèques et de déclarations :</p>
 <div class="codehilite"><pre><span></span><span class="c1">//Ajout de bibliothèques</span>
@@ -498,7 +501,7 @@
 <span class="kt">float</span> <span class="n">vitesse</span> <span class="o">=</span> <span class="mf">10.5</span><span class="p">;</span> <span class="c1">//Déclaration d&#39;un flottant de nom &quot;vitesse&quot; initialisé à 10.5</span>
 </pre></div>
 
-<h2 id="3-le-parametrage-du-programme-setup">3. Le paramétrage du programme setup()</h2>
+<h2 id="3-fonction-setup">3. Fonction <code class="codehilite">setup()</code></h2>
 <p>La partie <code class="codehilite">void setup()</code> renferme le paramétrage nécessaire au fonctionnement du programme, on peut par exemple y trouver :</p>
 <ul>
 <li>Le <code class="codehilite">pinMode()</code>, permettant de dire si une pin numérique est utilisée en entrée ou en sortie.</li>
@@ -519,7 +522,7 @@
 <span class="p">}</span>
 </pre></div>
 
-<h2 id="4-le-programme-principal-loop">4. Le programme principal loop()</h2>
+<h2 id="4-fonction-loop">4. Fonction <code class="codehilite">loop()</code></h2>
 <p>La partie <code class="codehilite">void loop()</code> est le programme principal de votre code Arduino. Comme son nom l'indique écrire dans cette partie revient à écrire dans une boucle <code class="codehilite">while(1)</code>, le programme est rebouclé sans fin.</p>
 <p>Exemple de programme principal faisant clignoter la led 13 (led présente sur le circuit imprimé d'une carte Arduino UNO) :</p>
 <div class="codehilite"><pre><span></span><span class="kt">void</span> <span class="nf">loop</span><span class="p">()</span>

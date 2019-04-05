@@ -212,16 +212,43 @@
 
       
         
-  
-  
-    <li class="md-tabs__item">
+  <li class="md-tabs__item">
+    
+      <a href="../../snt/" title="SNT" class="md-tabs__link md-tabs__link--active">
+        SNT
+      </a>
+    
+  </li>
+
       
-        <a href="../../tsti2d/" title="Classes" class="md-tabs__link">
-          Classes
-        </a>
+        
+  <li class="md-tabs__item">
+    
+      <a href="../../si-cit/" title="SI-CIT" class="md-tabs__link md-tabs__link--active">
+        SI-CIT
+      </a>
+    
+  </li>
+
       
-    </li>
-  
+        
+  <li class="md-tabs__item">
+    
+      <a href="../" title="PSTI2D" class="md-tabs__link md-tabs__link--active">
+        PSTI2D
+      </a>
+    
+  </li>
+
+      
+        
+  <li class="md-tabs__item">
+    
+      <a href="../../tsti2d/" title="TSTI2D" class="md-tabs__link md-tabs__link--active">
+        TSTI2D
+      </a>
+    
+  </li>
 
       
         
@@ -296,35 +323,28 @@
       
 
 
-  <li class="md-nav__item md-nav__item--nested">
-    
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2">
-    
-    <label class="md-nav__link" for="nav-2">
-      Classes
-    </label>
-    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
-      <label class="md-nav__title" for="nav-2">
-        Classes
-      </label>
-      <ul class="md-nav__list" data-md-scrollfix>
-        
-        
-          
-          
-          
-
-
   <li class="md-nav__item">
-    <a href="../../tsti2d/" title="TSTI2D" class="md-nav__link">
-      TSTI2D
+    <a href="../../snt/" title="SNT" class="md-nav__link">
+      SNT
     </a>
   </li>
 
-        
-          
-          
-          
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../si-cit/" title="SI-CIT" class="md-nav__link">
+      SI-CIT
+    </a>
+  </li>
+
+    
+      
+      
+      
 
 
   <li class="md-nav__item">
@@ -333,33 +353,16 @@
     </a>
   </li>
 
-        
-          
-          
-          
+    
+      
+      
+      
 
 
   <li class="md-nav__item">
-    <a href="../../cit/" title="CIT" class="md-nav__link">
-      CIT
+    <a href="../../tsti2d/" title="TSTI2D" class="md-nav__link">
+      TSTI2D
     </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../icn/" title="ICN" class="md-nav__link">
-      ICN
-    </a>
-  </li>
-
-        
-      </ul>
-    </nav>
   </li>
 
     
@@ -443,7 +446,7 @@
                 
                 <h1 id="programmation-en-environnement-arduino">Programmation en environnement Arduino</h1>
 <div class="admonition note">
-<p>Cette séquence qui est la suite de celle sur la programmation algorithmique, a pour but un éveil à la programmation en ligne de code. L'environnement Arduino apprécié pour sa rapidité de prise en main et son côté open-source était tout désigné pour cette tâche, en ayant pour base le langage C/C++ et les microcontrôleurs Atmega de chez Atmel la <em>surcouche</em> Arduino permet de coder les algorithmiques des plus simples aux plus complexes.</p>
+<p>Cette séquence qui est la suite de celle sur la programmation algorithmique, a pour but un éveil à la programmation en ligne de code. L'environnement Arduino apprécié pour sa rapidité de prise en main et son côté open-source était tout désigné pour cette tâche, en ayant pour base le langage C/C++ et la famille de microcontrôleurs Atmega de chez Microchip, la <em>surcouche</em> Arduino permet de coder les algorithmiques des plus simples aux plus complexes.</p>
 </div>
 <h2 id="sommaire">Sommaire</h2>
 <h3 id="cours">Cours</h3>
@@ -451,9 +454,20 @@
 <li><a href="\psti2d\arduino\01-Structure_d_un_programme_Arduino">Structure d'un programme Arduino</a></li>
 <li><a href="\psti2d\arduino\02-Variables_constantes">Les variables et constantes dans un code Arduino</a></li>
 <li><a href="\psti2d\arduino\03-Fonctions_C++">Les fonctions de base du langage C/C++</a></li>
-<li><a href="\psti2d\arduino\04-Fonctions_Arduino">Les fonctions Arduino</a></li>
-<li><a href="\psti2d\arduino\05-Modules_Grove">Utilisation des modules Grove de Seeed Studio</a></li>
-<li><a href="\psti2d\arduino\06-Creer_une_macro">Création d'une macro ou sous-programme en environnement C/C++</a></li>
+<li>Les fonctions Arduino<ol>
+<li><a href="\psti2d\arduino\04_1-digitalWrite_digitalRead">Lire/Écrire sur les pins numériques</a></li>
+<li><a href="\psti2d\arduino\04_2-analogRead_analogWrite">Lire/Écrire sur les pins analogiques</a></li>
+<li><a href="\psti2d\arduino\04_3-Serial">Le serial</a></li>
+<li><a href="\psti2d\arduino\04_4-Autres">Autres fonctions</a></li>
+</ol>
+</li>
+<li><a href="\psti2d\arduino\05-Modules_Grove">Modules Grove de Seeed Studio</a><ol>
+<li><a href="\psti2d\arduino\05_1-Actionneurs">Les actionneurs</a></li>
+<li><a href="\psti2d\arduino\05_2-Capteurs">Les capteurs</a></li>
+<li><a href="\psti2d\arduino\05_3-Afficheur_LCD">Le LCD</a></li>
+</ol>
+</li>
+<li><a href="\psti2d\arduino\06-Creer_une_macro">Les macros</a></li>
 <li><a href="\psti2d\arduino\07-interruptions">Les interruptions</a></li>
 <li><a href="\psti2d\arduino\08-timer">Le timer</a></li>
 </ol>
