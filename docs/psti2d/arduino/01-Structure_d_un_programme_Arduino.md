@@ -44,7 +44,7 @@ Compilation . : Avec l'IDE Arduino
 ****************************************************************************************************/
 ```
 
-## 2. Initialisations et déclarations de variables ou constantes
+## 2. Variables/Constantes
 
 C'est dans cette partie que nous faisons les ajouts de bibliothèques nécessaires à l'exécution de notre code, ainsi que les déclarations et initialisations de variables et constantes. Même si le c++ autorise les déclarations n'importe où dans le programme, il est vivement conseillé de toutes les regrouper dans cette partie.
 
@@ -64,7 +64,7 @@ float vitesse = 10.5; //Déclaration d'un flottant de nom "vitesse" initialisé 
 ```
 
 
-## 3. Le paramétrage du programme setup()
+## 3. Fonction `setup()`
 
 
 La partie ``void setup()`` renferme le paramétrage nécessaire au fonctionnement du programme, on peut par exemple y trouver :
@@ -89,7 +89,7 @@ void setup()
 ```
 
 
-## 4. Le programme principal loop()
+## 4. Fonction `loop()`
 
 
 La partie ``void loop()`` est le programme principal de votre code Arduino. Comme son nom l'indique écrire dans cette partie revient à écrire dans une boucle ``while(1)``, le programme est rebouclé sans fin.

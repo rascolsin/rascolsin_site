@@ -62,11 +62,9 @@ extra_javascript:
 ##############################################################################################
 nav:
     - Home: index.md
-    ###### TSTI2D #######
-    - Classes :
-      - TSTI2D : tsti2d/index.md
-      - PSTI2D : psti2d/index.md
-      - SNT : snt/index.md
-      - ICN : icn/index.md
+    - SNT : snt/index.md
+    - SI-CIT : si-cit/index.md
+    - PSTI2D : psti2d/index.md
+    - TSTI2D : tsti2d/index.md
     - Tutoriels : tutos/index.md
     

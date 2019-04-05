@@ -4,27 +4,27 @@ La variable est en programmation un système de stockage de données. Par analog
 
 ![](/psti2d/arduino/figures/Boites_gigognes.svg)
 
-## 1. Les types de variables
+## 1. Les types
 
 ### 1.1 Signé ou non Signé ??
 
 Vous avez peut-être pu remarquer au cours de vos lectures la référence à un type de variable signé ou non signé, qu'est ce que ça peut bien vouloir dire ?
 La "signature" est un moyen en programmation pour coder les nombres relatifs, un type de variable non signé comme par exemple un ```unsigned int``` ne pourra pas contenir un nombre relatif inférieur à 0 comme -9. À contrario, un type signé comme ```int``` pourra contenir un nombre relatif supérieur ou inférieur à 0.
 
-### 1.2 Le booléen : ```boolean```
+### 1.2 Le booléen
 
 ![](/psti2d/arduino/figures/Boite_bool.svg)
 
 Le booléen noté ```boolean``` sur Arduino, est le plus petit type de variable que vous serez emmené à rencontrer, il est codé sur seulement 2 bits. Son contenu ne peut être que **0 ou 1**, soit ```True```ou ```False```sur Arduino.
 Ce type est souvent utilisé pour stocker l'état d'un capteur numérique, par exemple un bouton poussoir : ```True```si le bouton est appuyé, ```False```si il est relâché. C'est un type non signé.
 
-### 1.3 L'octet : ```byte```
+### 1.3 L'octet
 
 ![](/psti2d/arduino/figures/Boite_octet.svg)
 
 L'octet noté ```byte``` sous Arduino, est un type de variable codé sur 8 bits. Son contenu est un nombre pouvant aller de **0 à 255**. C'est un type non signé.
 
-### 1.4 L'entier : ```int```
+### 1.4 L'entier
 
 ![](/psti2d/arduino/figures/Boite_entier.svg)
 
@@ -33,7 +33,7 @@ L'entier noté ```int``` sous Arduino, est un type de variable **signé** codé 
 !!! info
     Il existe le type ```unsigned int``` pour un entier non signé. Les valeurs limites sont donc de 0 à $2^{16}-1$, soit de 0 à  65 535.
 
-### 1.5 Le flottant : ```float```
+### 1.5 Le flottant
 
 ![](/psti2d/arduino/figures/Boite_flottant.svg)
 
@@ -48,7 +48,7 @@ La virgule flottante est une technique pour stocker dans une variable un nombre 
 * La mantisse contient les chiffres significatifs du nombre elle est codée sur 23 bits.
 * L'exposant représente la place de la virgule dans le nombre, il est codé sur 8 bits.
  
-### 1.6 Le caractère : ```char```
+### 1.6 Le caractère
 
 ![](/psti2d/arduino/figures/Boite_char.svg)
 
@@ -60,7 +60,7 @@ L'ASCII pour *American Standard Code for Information Interchange* (Code américa
 
 ![](/psti2d/arduino/figures/ASCII-Table.svg)
 
-## 2. La déclaration et l'initialisation de variables
+## 2. Déclaration de variables
 
 Pour utiliser une variable dans son programme Arduino il faut au préalable la créer, en programmation on parlera de **déclarer une variable**. Le langage C/C++ autorise la déclaration de variables n'importe où dans le code, cependant il est préférable pour les novices de **faire toutes les déclarations et initialisations au début**, juste après les ajouts de bibliothèques (```#define ...```). Quand on déclare une variable on a pour obligation de lui donner un nom, et de préciser son type, il est préférable également de l'initialiser, c'est à dire lui donner une valeur de départ sans quoi un nombre indépendant de notre volonté sera enregistré.
 
@@ -81,7 +81,7 @@ Dans cet exemple nous venons de déclarer une variable de type entier appelée *
 * Pour un caractère : ```char mon_caractere='b';``` ou ```char mon_caractere=98;``` Initialisation d'un caractère appelé mon_caractere à la valeur 98 code ASCII correspondant à 'b'.
 
 
-## 3. La déclaration de constantes
+## 3. Déclaration de constantes
 
 Une constante à l'inverse d'une variable, ne varie pas lors de l'exécution du programme elle reste à la valeur à laquelle elle a été initialisée. Cela est très utile pour **définir un numéro de pin ou une constante comme le nombre pi.** Nous développons ci-dessous 2 méthodes pour déclarer une constante :
 

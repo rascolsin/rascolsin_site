@@ -63,9 +63,9 @@ void loop()
 
 ```
 
-## 2. Comment créer une macro ?
+## 2. Creation
 
-### 2.1 Création d'une macro sans paramètres d'entrée ni de sortie
+### 2.1 Macro sans paramètres d'entrée ni de sortie
 
 La figure ci-dessous montre l'exemple de la déclaration d'une telle macro, de manière algorithmique, puis en langage C/C++ :
 ![](/psti2d/arduino/figures/macro_sans_param_contour.svg)
@@ -102,7 +102,7 @@ void loop()
 }
 ```
 
-### 2.2 Création d'une macro avec paramètre d'entrée
+### 2.2 Macro avec paramètre d'entrée
 
 La figure ci-dessous montre l'exemple de la déclaration d'une telle macro, de manière algorithmique, puis en langage C/C++ :
 
@@ -137,7 +137,7 @@ void loop()
 ```
 
 
-### 2.3 Création d'une macro avec paramètres d'entrée et de sortie
+### 2.3 Macro avec paramètres d'entrée et de sortie
 
 La figure ci-dessous montre l'exemple de la déclaration d'une telle macro, de manière algorithmique, puis en langage C/C++ :
 

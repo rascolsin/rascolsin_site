@@ -7,6 +7,6 @@
 * Les réseaux sociaux
 * Les données structurées et leur traitement
 * Localisation, cartographie et mobilité
-* Informatique embarquée et objets connectés
+* [Informatique embarquée et objets connectés](/snt/objets_connectes/)
 * La photographie numérique
 

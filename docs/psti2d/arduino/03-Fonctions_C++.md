@@ -2,7 +2,7 @@
 
 Le langage C/C++ utilisé pour la programmation des microcontrôleurs Atmel est le langage choisi par Arduino pour la programmation de ses cartes électroniques. Dans ce cours nous donnons les principaux mots-clés du langage permettant de reproduire les structures de bases vues en algorithmique : structures linéaires, alternatives et répétitives.
 
-## 1. Les opérateurs de comparaison
+## 1. Opérateurs de comparaison
 
 Le tableau suivant liste les opérateurs utilisés en C/C++ pour définir des conditions :
 
@@ -19,7 +19,7 @@ Le tableau suivant liste les opérateurs utilisés en C/C++ pour définir des co
 !!! warning
 	L'erreur classique est de confondre le **```=```** et le **```==```**, notez que le premier est pour l'affectation d'une valeur à une variable et le second pour la comparaison. De plus le langage C/C++ n'autorise pas l'encadrement de variables entre deux valeurs dans une condition tel que : **```5<toto<10```**, pour écrire une telle condition il suffit d'utiliser l'opérateur logique **```&&```**.
 
-## 2. Les opérateurs logiques
+## 2. Opérateurs logiques
 
 Le tableau suivant liste les opérateurs logiques utilisés en C/C++ pour définir des conditions :
 
@@ -32,9 +32,9 @@ Le tableau suivant liste les opérateurs logiques utilisés en C/C++ pour défin
 !!! warning
 	Faire attention à ne pas confondre le **```&&```** et le **```&```** ou le **```||```** et le **```|```**. Dans le cas du double symbole l'utilisation est pour une condition, dans le cas du symbole seul l'utilisation est un pour une opération logique bit à bit.
 
-## 3. Les conditions
+## 3. Conditions
 
-### 3.1 Si Alors : ```if() ```
+### 3.1 ```if```
 La condition **Si Alors** permet de réaliser une ou plusieurs actions si seulement la condition énoncée est vrai, si ce n'est pas le cas le programme saute la condition et poursuit son exécution. La structure de cette condition est donnée ci-dessous :
 
 ![](/psti2d/arduino/figures/if.svg)
@@ -54,7 +54,7 @@ if(a<10) //Condition pour entrer dans le si : "a" doit être strictement inféri
 
 ```
 
-### 3.2 Si Alors Sinon : ```if() else```
+### 3.2 ```if else```
 La condition **Si Alors Sinon** permet de réaliser une ou plusieurs actions si seulement la condition énoncée est vrai, si ce n'est pas le cas le programme aiguille l'exécution vers le Sinon. La structure de cette condition est donnée ci-dessous :
 
 ![](/psti2d/arduino/figures/if_else.svg)
@@ -75,7 +75,7 @@ else
 
 ```
 
-### 3.3 Le choix multiple : ```switch() case```
+### 3.3 ```switch case```
 
 Le choix multiple permet pour une variable de notre choix, d'aiguiller le programme suivant la valeur que cette variable va prendre. La structure de cette condition est donnée ci-dessous :
 
@@ -102,9 +102,9 @@ switch(var_choix) //Mise en place d'un choix multiple pour la variable var_choix
 
 
 
-## 4. Les boucles
+## 4. Boucles
 
-### 4.1 Tant que : ```while()```
+### 4.1 ```while```
 
 La boucle **Tant que** permet de répéter une suite d'instructions tant que le condition énoncée au début est vraie. La structure de cette boucle est donnée ci-dessous.
 
@@ -120,7 +120,7 @@ while(1) //Permet de réaliser une boucle infinie équivaut à écrire while(1=1
 
 ```
 
-### 4.2 Faire Tant que : ```do while()```
+### 4.2 ```do while```
 
 La boucle **Faire Tant que** permet de répéter une suite d'instructions tant que le condition énoncée à la fin est vraie, **la suite d'instructions sera réalisée au moins une fois car le test de la condition ne se fait qu'à la fin**. La structure de cette boucle est donnée ci-dessous.
 
@@ -136,7 +136,7 @@ do
 ```
 
 
-### 4.3 Pour : ```for()```
+### 4.3 ```for```
 
 La boucle **Pour** permet de répéter une suite d'instructions selon une évolution définie au début. La structure de cette boucle est donnée ci-dessous.
 
