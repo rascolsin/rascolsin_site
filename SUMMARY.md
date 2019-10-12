@@ -1,12 +1,12 @@
 # Table of contents
 
 * [About](README.md)
-* [Untitled](untitled.md)
 
 ## Docs
 
 * [Arduino](docs/arduino/README.md)
-  * [Untitled](docs/arduino/untitled.md)
+  * [Structure d'un code](docs/arduino/untitled.md)
+  * [Variables et constantes](docs/arduino/variables-et-constantes.md)
 
 ## Turoriels
 
